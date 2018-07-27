@@ -1,0 +1,624 @@
+@import "../global/base";
+
+html{
+  // background: #f1f1f1 !important;
+  height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: url('https://resource.sa-green.cn/image/gift/%E8%83%8C%E6%99%AF2.png') !important;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    font-weight: 300;
+}
+.main{
+    width: 100%;
+    overflow-x: hidden;
+}
+//礼物合起来动画
+.gift_animate{
+    position: absolute;
+    top: -30px/$rem;
+    width: 100%;
+    pointer-events: none;
+    z-index: 20;
+}
+.gift_img_friend{
+    margin-top: -8px/$rem;
+    margin-bottom: 35px/$rem;
+    .png_img{
+        width: 325px/$rem;
+        height: 201px/$rem;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        .aList{
+            position: relative;
+            z-index: 4;
+            width: 100%;
+            padding-top: 197px/2/$rem;
+            .productName{
+                text-align: center;
+                font-size: 36px/2/$rem;
+                color: #FFFFFF;
+                margin-bottom: 16px/2/$rem;
+            }
+            .price{
+                text-align: center;
+                font-size: 44px/2/$rem;
+                color: #58BF40;
+            }
+        }
+        .bList{
+            position: relative;
+            z-index: 4;
+            width: 100%;
+            padding-top: 170px/2/$rem;
+            .listItem{
+                width: 446px/2/$rem;
+                margin: 0 auto;
+                height: 40px/2/$rem;
+                overflow: hidden;
+                span{
+                    float: left;
+                    font-size: 28px/2/$rem;
+                    color: #FFFFFF;
+                }
+                i{
+                    float: right;
+                    font-size: 28px/2/$rem;
+                    color: #58BF40;
+                    font-style: normal;
+                }
+            }
+            .btn{
+                width: 228px/2/$rem;
+                height: 56px/2/$rem;
+                text-align: center;
+                line-height: 56px/2/$rem;
+                position: relative;
+                @include retinab(#6A6A6A,4px);
+                font-size: 22px/2/$rem;
+                color: #A9A9A9;
+                margin: 10px/2/$rem auto;
+            }
+        }
+        .gif_img{
+            z-index: 3;
+        }
+        .bgPic{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px/$rem;
+            z-index: 2;
+            display: block;
+        }
+    }
+    .hand_img{
+        position: absolute;
+        top: 0;
+        margin-right: -20px/$rem;
+        right: 0;
+        margin-top: 200px/$rem;
+        z-index: 22;
+        img{
+            width: 110px/$rem;
+        }
+    }
+    .hand_animate{
+        position: absolute;
+        -webkit-animation:hand_img 2s linear alternate infinite;
+    }
+}
+
+.png_touy{
+    position: absolute;
+    width: 340px/$rem;
+    left:50%;
+    margin-left: -170px/$rem;
+    margin-top: -190px/$rem;
+}
+
+@keyframes hand_img {
+  0% {right:0;}
+  25% {right:10px;}
+  50% {right:20px;}
+  75% {right:10px;}
+  100% {right:0;}
+}
+
+.gift_index{
+    padding-top: 22px/$rem;
+}
+.gift_share{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    div{
+        margin:15px/$rem;
+        color: #fff;
+        background: #1C9B4D;
+        font-size: 15px/$rem;
+        text-align: center;
+        line-height: 44px/$rem;
+        border-radius: 2px/$rem;
+    }
+}
+
+.giftNull{
+    .giftNull_title{
+        background: rgba(140, 115, 25, 0.52);
+        text-align: center;
+        color: #fff;
+        line-height:44px/$rem;
+    }
+    .gift_userinfo{
+        text-align: center;
+        margin-top: 30px/$rem;
+        margin-bottom: 20px/$rem;
+        img{
+            width: 40px/$rem;
+            height: auto;
+            border-radius: 100%;
+        }
+        .gift_userinfo_desone{
+            font-size: 14px;
+            color: #333;
+            padding: 10px/$rem 0;
+        }
+        .gift_userinfo_destwo{
+            font-size: 12px/$rem;
+            color: #999;
+
+        }
+    }
+
+}
+.gift_img{
+    width: 345px/$rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px/$rem;
+    img{
+
+    }
+}
+.newUser_main_null{
+    .trigle{
+        display: none;
+    }
+}
+.newUser_nullimg{
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -140px/$rem;
+        margin-top:-170px/$rem;
+        width: 280px/$rem;
+    }
+}
+//新用户底部二维码
+.GiftNull_newUser{
+    height: 90px/$rem;
+    background-image: linear-gradient(-146deg, #6B6761 0%, #5A5856 73%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;;
+    display: flex;
+    .trigle{
+        color: #fff;
+        position: absolute;
+        right: 0;
+        margin-right: 25px/$rem;
+        top: -6px/$rem;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 16px solid #66635e;
+    }
+    img{
+        margin-left: 31px/$rem;
+        margin-top: -15px/$rem;
+        width: 80px/$rem;
+    }
+    .giftNull_desone{
+        font-size: 12px/$rem;
+        color: #fff;
+        line-height: 30px/$rem;
+        margin-top: 15px/$rem;
+        margin-left: 15px/$rem;
+    }
+    .giftNull_destwo{
+        font-size: 12px/$rem;
+        color: #fff;
+        margin-bottom: 10px/$rem;
+        margin-left: 15px/$rem;
+    }
+}
+//老用户按钮
+.olduser_btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    div{
+        margin: 10px/$rem;
+        border:1px solid #1C9B4D;
+        border-radius: 2px/$rem;
+        text-align: center;
+        line-height: 44px/$rem;
+        background: #1C9B4D;
+        color: #fff;
+        font-size: 15px/$rem;
+    }
+}
+//用户信息
+.userinfo{
+    .gift_userinfo_all{
+        display: flex;
+        align-items: center;
+        margin:0 0 25px/$rem 25px/$rem;
+        img{
+            width: 40px/$rem;
+            height: auto;
+            border-radius: 100%;
+            margin-right: 10px/$rem;
+        }
+        .giftall_userinfo_desone{
+            font-size: 17px;
+            color: #111;
+            padding-bottom: 5px/$rem;
+        }
+        .giftall_userinfo_destwo{
+            font-size: 11px/$rem;
+            color: #999;
+        }
+    }
+}
+//回复内容
+.gift_replay_word{
+    margin-left: 31.5px/$rem;
+    margin-right: 31.5px/$rem;
+    .word_d:before{
+           content: '';
+           pointer-events:none;
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           pointer-events:none;
+           -webkit-box-sizing:border-box;
+           border-top: 1px/$rem solid #eceaea;
+           margin-top: -1px;
+       }
+       .word_d{
+           position: relative;
+           font-size: 13px/$rem;
+           color: #111;
+           padding-top: 15px/$rem;
+       }
+}
+//老用户按钮
+.older_user_btns{
+    position: fixed;
+    width: 90%;
+    margin-left: 5%;
+    bottom: 15px/$rem;
+    display: flex;
+    div{
+        flex:0 0 48.5%;
+        font-size: 15px/$rem;
+        text-align: center;
+        line-height: 40px/$rem;
+        border-radius: 2px/$rem;
+    }
+    .older_btn_l{
+        margin-right: 1.5%;
+        background: #1C9B4D;
+        color: #fff;
+        border:1px solid #1C9B4D;
+    }
+    .older_btn_r{
+        color: #1C9B4D;
+        border:1px solid #1C9B4D;
+    }
+}
+//老用户领取成功文案
+.oldUser{
+    padding: 10px/$rem;
+    .oldUser_title1{
+        line-height: 30px/$rem;
+        font-size: 14px;
+        color: #333;
+    }
+    .oldUser_title2{
+        font-size: 12px/$rem;
+        color: #999;
+    }
+}
+//老用户领取成功后回复
+.older_replay{
+    // margin:10px/$rem;
+    .text_div{
+        margin: 10px/$rem;
+        textarea{
+            width: 94%;
+            min-height: 85px/$rem;
+            border:none;
+            padding: 10px/$rem;
+            font-size: 12px/$rem;
+            background: #FFFFFF;
+            border: 1px/$rem solid #E9E1D1;
+            border-radius: 2px/$rem;
+        }
+    }
+    .replay_btnAll{
+        display: inline-block;
+        width: 100%;
+        margin-right: 10px/$rem;
+        .replay_btn{
+            width: 40px;
+            line-height: 25px/$rem;
+            border-radius: 2px/$rem;
+            font-size: 12px/$rem;
+            text-align: center;
+            float: right;
+            margin-bottom: 10px/$rem;
+            margin-right: 10px/$rem;
+            color: #fff;
+            background: #3b9c05;
+        }
+    }
+    .replay_success{
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+    }
+}
+.bless_con{
+    //margin-left: 11.5px/$rem;
+    //margin-right: 11.5px/$rem;
+}
+.gift_i{
+    padding-left: 10px/$rem;
+    padding-right: 10px/$rem;
+    margin-top: 30px/$rem;
+}
+.olderUserBtn{
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 130px/2/$rem;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    .btn{
+        width: 690px/2/$rem;
+        height: 90px/2/$rem;
+        line-height: 90px/2/$rem;
+        text-align: center;
+        color: #fff;
+        font-size: 30px/2/$rem;
+        background: #3B9C05;
+        border-radius: 4px/2/$rem;
+        margin: 20px/2/$rem auto;
+    }
+}
+.mark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+}
+#addDistributionInfoBox{
+    animation-duration : .3s ;
+}
+.addDistributionInfoBox{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding-top: 30px/2/$rem;
+    .box{
+        position: relative;
+        height: 140px/2/$rem;
+        @include retinab(#e8e8e8,4px);
+        margin: 0 30px/2/$rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px/2/$rem;
+        span{
+            color: #999999;
+        }
+        i{
+            color: #999999;
+        }
+        .centerBox{
+            padding-left: 25px/2/$rem;
+            flex-grow: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .timefbccc{
+                flex-grow: 1;
+                text-align: right;
+                padding-right: 35px/2/$rem;
+                p{
+                    font-size: 26px/2/$rem;
+                    color: #333333;
+                    margin-bottom: 6px/2/$rem;
+                }
+                div{
+                    font-size: 22px/2/$rem;
+                    color: #999999;
+                }
+            }
+        }
+
+    }
+    .subBtn{
+        width: 690px/2/$rem;
+        height: 90px/2/$rem;
+        text-align: center;
+        line-height: 90px/2/$rem;
+        background: #3B9C05;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 30px/2/$rem;
+        margin: 40px/2/$rem auto 25px/2/$rem;
+    }
+    .acb{
+        background: #b2d79d !important;
+    }
+}
+.addressInfoBox{
+    .contact{
+        margin-bottom: 16px/2/$rem;
+        font-size: 30px/2/$rem;
+        line-height: 30px/2/$rem;
+        color: #333333;
+        span{
+            margin-right: 8px/2/$rem;
+        }
+        .address_flag{
+            background: #3B9C05;
+            font-size: 20px/2/$rem;
+            padding: 5px/2/$rem 16px/2/$rem;
+            color: #fff;
+            border-radius: 30px/2/$rem;
+            vertical-align: text-top;
+        }
+    }
+    .add{
+        color: #666666;
+        font-size: 24px/2/$rem;
+        line-height: 30px/2/$rem;
+    }
+}
+.supporttime{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    .boxName{
+        height: 88px/2/$rem;
+        line-height: 88px/2/$rem;
+        text-align: center;
+        font-size: 30px/2/$rem;
+        color: #333333;
+        position: relative;
+        @include retinabb(#e1e1e1);
+    }
+    .content{
+        display: flex;
+        .dateBox{
+            width: 220px/2/$rem;
+            div{
+                height: 88px/2/$rem;
+                text-align: center;
+                line-height: 88px/2/$rem;
+                font-size: 28px/2/$rem;
+                color: #333333;
+                background: #F5F5F5;
+            }
+            .active{
+                background: #fff;
+            }
+
+        }
+        .timeBox{
+            width: 530px/2/$rem;
+            div{
+                height: 88px/2/$rem;
+                line-height: 88px/2/$rem;
+                font-size: 28px/2/$rem;
+                color: #666666;
+                text-align: left;
+                padding-left: 30px/2/$rem;
+            }
+            .active{
+                color: #3B9C05;
+            }
+
+        }
+    }
+}
+.markBg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 30;
+    .listContent{
+        width: 547px/2/$rem;
+        height: 665px/2/$rem;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 8px/2/$rem;
+        .offBtn{
+            display: block;
+            width: 80px/2/$rem;
+            height: 80px/2/$rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -140px/2/$rem;
+            border: 1px solid #6a6a6a;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 78px/2/$rem;
+            color: #fff;
+        }
+        .title{
+            height: 114px/2/$rem;
+            line-height: 114px/2/$rem;
+            text-align: center;
+            background: #EAEAEA;
+            font-size: 36px/2/$rem;
+            color: #111111;
+        }
+        .listBox{
+            padding: 50px/2/$rem;
+            overflow-y: scroll;
+            height: 451px/2/$rem;
+            .item{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 14px/2/$rem;
+                span{
+                    font-size: 28px/2/$rem;
+                    color: #111111;
+                }
+                i{
+                    font-size: 28px/2/$rem;
+                    color: #3B9C05;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

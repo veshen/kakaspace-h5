@@ -1,0 +1,74 @@
+@import "../global/base";
+body {
+    background: #fff;
+}
+.container{
+    .banner{
+        img{
+            display: block;
+        }
+    }
+    .content{
+        padding: 0 30px/2/$rem;
+        .nullStatus{
+            padding-top: 198px/2/$rem;
+            img{
+                display: block;
+                width: 265px/2/$rem;
+                height: 265px/2/$rem;
+                margin: 0 auto 30px/2/$rem;
+            }
+            p{
+                font-size: 28px/2/$rem;
+                color: #999999;
+                text-align: center;
+            }
+        }
+        .title{
+            height: 72px/2/$rem;
+            line-height: 72px/2/$rem;
+            font-size: 28px/2/$rem;
+            color: #999999;
+            position: relative;
+            @include retinabb(#E4E4E4);
+        }
+        ul{
+            li{
+                height: 110px/2/$rem;
+                position: relative;
+                @include retinabb(#E4E4E4);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .lb{
+                    margin-right: 12px/2/$rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 66px/2/$rem;
+                        height: 66px/2/$rem;
+                    }
+                }
+                .cb{
+                    flex-grow: 1;
+                    p{
+                        font-size: 28px/2/$rem;
+                        line-height: 28px/2/$rem;
+                        color: #333333;
+                        margin-bottom: 12px/2/$rem;
+                    }
+                    span{
+                        font-size: 24px/2/$rem;
+                        line-height: 24px/2/$rem;
+                        color: #999999;
+                    }
+                }
+                .rb{
+                    font-size: 28px/2/$rem;
+                    color: #333333;
+                }
+            }
+        }
+    }
+}

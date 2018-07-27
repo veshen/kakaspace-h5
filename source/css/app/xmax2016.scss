@@ -1,0 +1,159 @@
+@import "../global/base";
+@import "../layout/snow";
+
+html,body{
+  height: 100%;
+}
+body{
+  background: #333;
+}
+.music_icon{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  img{
+    &:first-child{
+      animation: round 10s linear infinite;
+      -webkit-animation: round 10s linear infinite;
+    }
+    &:last-child{
+      display: none;
+    }
+  }
+}
+.downIcon{
+  position: absolute;
+  opacity: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10001;
+  animation: down 0.5s alternate linear infinite;
+  -webkit-animation: down 0.5s alternate linear infinite;
+}
+.imgProgress{
+  position: absolute;
+  background: #d5e0be;
+  color: #fff;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  transition:opacity 0.5s,transform 0.3s;
+  -webkit-transition:opacity 0.5s,-webkit-transform 0.3s;
+  z-index: 1000;
+  pointer-events: none;
+  p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    -webkit-align-items:center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    position: absolute;
+    margin-top: -100px;
+    left: 0;
+    top:0;
+    span{
+      background: url('http://resource.sa-green.cn/image/xmax2016h5/%E7%99%BE%E5%88%86%E6%AF%94%EF%BC%8D%E4%BF%AE%E6%94%B9.png') no-repeat;
+      background-size: 25px 500px;
+      width: 25px;
+      height: 45px;
+      //transition: background 0.5s;
+    }
+  }
+  img{
+    width: 100%;
+  }
+}
+.imgBox{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  //transition:transform 0.5s;
+  z-index: 100;
+ }
+.imgBoxGroup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  .change1,.change2{
+    img{
+      width: 100%;
+    }
+  }
+}
+.imgBoxItem{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  &.imgBoxFont{
+    position: absolute;
+    transform:translate(0,100px);
+    -webkit-transform:translate(0,100px);
+    transition:opacity 0.5s 0.5s,transform 0.3s 0.5s;
+    -webkit-transition:opacity 0.5s 0.5s,-webkit-transform 0.3s 0.5s;
+    z-index: 1000;
+  }
+  &.imgBoxBg{
+    transition:opacity 0.5s;
+    -webkit-transition:opacity 0.5s;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+@keyframes round {
+  from{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes round {
+   from{
+     transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+   }
+   to{
+     transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+   }
+ }
+
+@keyframes down {
+  from{
+    transform: translate(0,-30px);
+    -webkit-transform:  translate(0,-30px);
+  }
+  to{
+    transform:  translate(0,-20px);
+    -webkit-transform:  translate(0,-20px);
+  }
+}
+@-webkit-keyframes down {
+  from{
+    transform: translate(0,-30px);
+    -webkit-transform:  translate(0,-30px);
+  }
+  to{
+    transform:  translate(0,-20px);
+    -webkit-transform:  translate(0,-20px);
+  }
+}

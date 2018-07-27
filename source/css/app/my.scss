@@ -1,0 +1,265 @@
+@import "../global/base";
+
+body {
+    padding-bottom: 220px/2/$rem;
+    background: #f1f1f1;
+}
+.memberBg{
+    background: url('https://resource.sa-green.cn/image/jpg/%E6%88%91%E7%9A%84-%E7%A9%BA.png') top center no-repeat;
+    background-size: 100%;
+}
+.my-profile {
+    .my-top{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px/2/$rem;
+        padding: 40px/2/$rem 0;
+        .user-info{
+            display: flex;
+            align-items: center;
+            height: 90px/2/$rem;
+            .user-img{
+                width: 90px/2/$rem;
+                height: 90px/2/$rem;
+                border-radius: 50%;
+                margin-right: 20px/2/$rem;
+                position: relative;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                div{
+                    position: absolute;
+                    width: 30px/2/$rem;
+                    height: 30px/2/$rem;
+                    background: #000000;
+                    border-radius: 50%;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 16px/2/$rem;
+                        height: 16px/2/$rem;
+                    }
+                }
+                .gray{
+                    background: #999999;
+                }
+            }
+            .user-img>img{
+                border-radius: 50%;
+            }
+            .user-deta{
+                h3{
+                    font-size: 36px/2/$rem;
+                    line-height: 36px/2/$rem;
+                    color: #333333;
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 24px/2/$rem;
+                    line-height: 24px/2/$rem;
+                    color: #78643D;
+                    margin-top: 12px/2/$rem;
+                    span{
+                        background: #000000;
+                        border-radius: 4px/2/$rem;
+                        font-size: 20px/2/$rem;
+                        line-height: 30px/2/$rem;
+                        color: #E7BB65;
+                        margin-left: 6px/2/$rem;
+                        padding: 0 2px/2/$rem;
+                    }
+                }
+                .everPurchased{
+                    color: #999999;
+                }
+            }
+        }
+        .user-pay{
+            text-align: center;
+            p{
+                font-size: 24px/2/$rem;
+                color: #333333;
+                line-height: 24px/2/$rem;
+                margin-top: 10px/2/$rem;
+            }
+        }
+    }
+    .account-info{
+        display: flex;
+        margin: 0 30px/2/$rem 34px/2/$rem;
+        background: #fff;
+        padding: 40px/2/$rem 0;
+        box-shadow: 0 0 4px/2/$rem 0 rgba(0,0,0,0.10);
+        border-radius: 8px/2/$rem;
+        div{
+            width: 50%;
+            height: 90px/2/$rem;
+            h3{
+                margin-left: 50px/2/$rem;
+                font-size: 30px/2/$rem;
+                color: #333333;
+                line-height: 30px/2/$rem;
+                font-weight: 400;
+                margin-bottom: 20px/2/$rem;
+                img{
+                    width: 30px/2/$rem;
+                    height: 30px/2/$rem;
+                    margin-right: 10px/2/$rem;
+                    vertical-align: top;
+                }
+            }
+            p{
+                margin-left: 50px/2/$rem;
+                font-size: 42px/2/$rem;
+                color: #333333;
+                line-height: 42px/2/$rem;
+            }
+        }
+    }
+    .memberBox{
+        margin: 0 30px/2/$rem 20px/2/$rem;
+        height: 112px/2/$rem;
+        padding: 0 30px/2/$rem 0 20px/2/$rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1E1E1E;
+        box-shadow: 0 0 6px/2/$rem 0 rgba(0,0,0,0.30);
+        border-radius: 8px/2/$rem;
+        .memberBoxLeft{
+            h3{
+                font-size: 28px/2/$rem;
+                line-height: 28px/2/$rem;
+                color: #EECF91;
+                margin-bottom: 20px/2/$rem;
+                font-weight: 400;
+                img{
+                    width: 24px/2/$rem;
+                    height: 24px/2/$rem;
+                    margin-right: 6px/2/$rem;
+                }
+            }
+            p{
+                font-size: 24px/2/$rem;
+                line-height: 24px/2/$rem;
+                color: #A49572;
+            }
+        }
+        .memberBoxRight{
+            span{
+                font-size: 24px/2/$rem;
+                line-height: 24px/2/$rem;
+                color: #EECF91;
+                margin-left: 2px/2/$rem;
+            }
+            .icon-right-blod{
+                position: relative;
+                top: -2px/2/$rem;
+            }
+        }
+
+    }
+    .profile {
+        padding: 57px/2/$rem 0;
+        background: #fff;
+
+        img {
+            display: block;
+            margin: 0 auto 20px/2/$rem;
+            width: 180px/2/$rem;
+            height: 180px/2/$rem;
+            border-radius: 50%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 36px/2/$rem;
+            color: #333333;
+            line-height: 36px/2/$rem;
+        }
+    }
+    .content{
+        margin-bottom: 20px/2/$rem;
+        position: relative;
+        @include retinabt(#d9d9d9);
+    .profile-menu-list {
+        position: relative;
+        background-color: #ffffff;
+        @include retinabb(#d9d9d9);
+
+        .icons {
+            margin-right: 10px/2/$rem;
+            font-size: 36px/2/$rem;
+            color: #999999;
+        }
+        span.icon-right-blod{
+            color: #BBBBBB;
+            margin-left: 20px/2/$rem;
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            background-color: #ffffff;
+            height: 100px/2/$rem;
+            line-height: 100px/2/$rem;
+            padding: 0 30px/2/$rem 0 0;
+            margin-left: 30px/2/$rem;
+            position: relative;
+            align-items: center;
+            .icon-img{
+                width: 30px/2/$rem;
+                height: 30px/2/$rem;
+                margin-right: 10px/2/$rem;
+            }
+            .item-name {
+                color: #333333;
+                font-size: 30px/2/$rem;
+                display: flex;
+                align-items: center;
+            }
+
+            .item-content {
+                flex: 1;
+                -webkit-flex: 1;
+                text-align: right;
+                color: #666666;
+                font-size: 30px/2/$rem;
+                .tips{
+                    font-size: 24px/2/$rem;
+                    color: #999999;
+                }
+                em {
+                    color: #999999;
+                    text-align: left;
+                    float: left;
+                }
+            }
+
+            .service-phone {
+                font-size: 24px/2/$rem;
+                color: #999999;
+                a{
+                    color: #999999;
+                }
+                a:visited{
+                    color: #999999;
+                }
+            }
+
+            .item-content-red {
+                font-size: 24px/2/$rem;
+                color: #fc5c5c;
+            }
+        }
+
+        li:last-child {
+            @include retinabb(#fff);
+        }
+    }}
+}

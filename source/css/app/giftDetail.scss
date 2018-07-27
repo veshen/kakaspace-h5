@@ -1,0 +1,77 @@
+@import "../global/base";
+body{
+    height: 100%;
+    background: url('https://resource.sa-green.cn/image/gift/%E8%83%8C%E6%99%AF.png') !important;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+//用户信息
+.userinfo{
+    margin-top: 25px/$rem;
+    .gift_userinfo_all{
+        display: flex;
+        align-items: center;
+        margin:0 0 25px/$rem 25px/$rem;
+        img{
+            width: 40px/$rem;
+            height: auto;
+            border-radius: 100%;
+            margin-right: 10px/$rem;
+        }
+        .giftall_userinfo_desone{
+            font-size: 17px;
+            color: #111;
+            padding-bottom: 5px/$rem;
+        }
+        .giftall_userinfo_destwo{
+            font-size: 11px/$rem;
+            color: #999;
+
+        }
+    }
+}
+
+//再增一次按钮
+.gift_btn_bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #f1f1f1;
+    .gift_btn_div{
+        padding: 10px/$rem;
+        div{
+            background: #3b9c05;
+            color: #fff;
+            line-height: 44px/$rem;
+            text-align: center;
+            border-radius: 2px/$rem;
+        }
+    }
+}
+
+.detail_word{
+    padding-left: 10px/$rem;
+    color: #333;
+    font-size: 14px/$rem;
+    padding-top: 10px/$rem;
+    span{
+        color: #3b9c05;
+    }
+}
+.gift_img{
+    padding-left: 25px/$rem;
+    padding-right: 25px/$rem;
+    margin-bottom: 29px/$rem;
+    .price{
+        position: absolute;
+        right: 0;
+        color: #fff;
+        font-size: 18px/$rem;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.13);
+        margin-right: 43px/$rem;
+        margin-top: 12.5px/$rem;
+    }
+}

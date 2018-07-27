@@ -1,0 +1,134 @@
+@import "../global/base";
+
+body{
+  background: #f1f1f1;
+  /*padding-bottom:50px/$rem;*/
+}
+.tel_hidden{
+  display: none;
+}
+.confirmBox_bg{
+  background: #000;
+  opacity: 0.3;
+}
+.bill_main{
+  background: #fff;
+  padding: 15px/$rem 15px/$rem 0 15px/$rem;
+  .bill_icon{
+    text-align: center;
+    color: #333;
+    font-size: 15px/$rem;
+    img{
+      width: 27px/$rem;
+      vertical-align: middle;
+      padding-right: 10px/$rem;
+    }
+  }
+  .bill_price{
+    text-align: center;
+    color: #333;
+    font-size: 32px/$rem;
+    margin-top: 15px/$rem;
+    margin-bottom: 5px/$rem;
+    span{
+      font-size: 18px/$rem;
+    }
+  }
+  .bill_succ{
+    text-align: center;
+    font-size: 15px/$rem;
+    color: #999;
+    padding-bottom: 23px/$rem;
+  }
+  .bill_top{
+    padding-top: 15px/$rem;
+  }
+  .bill_sm{
+    padding-bottom: 15px/$rem;
+    .bill_sm_l{
+      font-size: 15px/$rem;
+      color: #333;
+    }
+    .bill_sm_r{
+      float: right;
+      font-size: 15px/$rem;
+      color: #999;
+    }
+  }
+  .bill_jd{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 15px/$rem;
+    .bill_jd_l{
+      font-size: 15px/$rem;
+      color: #333;
+    }
+    .bill_jd_r_line{
+      float: left;
+      height: 100%;
+      /*border:1px/$rem solid #3B9C05;;*/
+      position: absolute;
+      margin-left: 8px/$rem;
+      width: 1px/$rem;
+      background: #3B9C05;
+    }
+    .bill_jd_al{
+        position: relative;
+
+      }
+    .icon-bg{
+          background: #fff;
+          color: #3B9C05;
+          font-size: 17px/$rem;
+        }
+        .bill_time{
+          margin-left: 45px/$rem;
+          float: right;
+          color: #999;
+          font-size: 15px/$rem;
+        }
+        .bill_li{
+          min-width: 70px;
+          color: #3B9C05;
+          font-size: 15px/$rem;
+          margin-left: 5px/$rem;
+          font-size: 15px/$rem;
+        }
+    .bill_jd_r{
+      float: right;
+      position: relative;
+      div{
+        margin-bottom: 30px/$rem;
+      }
+    }
+  }
+}
+.bill_sm_border{
+  border-bottom: 1px solid #e4e4e4;
+}
+.bill_jd_r div:last-child{
+  margin-bottom: 0 !important;
+
+}
+.bill_jd_al div:first-child i{
+ padding-top: 1px !important;
+}
+.bill_jd_al div:last-child i{
+ padding-bottom: 2px !important;
+}
+.bill_tel{
+  text-align: center;
+  padding-top: 20px/$rem;
+  color: #4990E2;
+  font-size: 12px/$rem;
+  a{
+    color: #4990E2;
+  }
+}
+
+
+
+
+
+
+

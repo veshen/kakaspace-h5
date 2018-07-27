@@ -1,0 +1,799 @@
+@import "../global/base";
+
+body {
+    background: #f1f1f1;
+}
+// 提示
+.ordertishi{
+    background: #fff2d2;
+    padding: 10px/$rem 20px/$rem;
+    font-size: 13px/$rem;
+    color: #333;
+    line-height: 19px/$rem;
+    span{
+        color: #ff3b30;
+    }
+}
+//标题
+.order_detail_title{
+    height: 10px/$rem;
+    background: #f1f1f1;
+    padding: 14px/$rem 14px/$rem 10px/$rem;
+    color: #999;
+    font-size: 13px/$rem;
+    position: relative;
+    z-index: 10;
+}
+//悬浮红包
+.float_user_share{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    position: fixed;
+    top: 20%;
+    right: -10px/$rem;
+    z-index: 11;
+    display: none;
+    img{
+        width: 75px/$rem
+    }
+}
+.slideShow-transition{
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+// 发红包
+.order_red{
+    background: #f1f1f1;
+    .new_user_share_red_packet{
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px/$rem 10px/$rem;
+        .new_red_title{
+            padding-bottom: 5px/$rem;
+        }
+        .new_user_l{
+            display: flex;
+            align-items: center;
+            .new_user_l_img{
+                margin-right: 10px/$rem;
+            }
+        }
+        .new_user_share_red_packet_l{
+            font-size: 14px/$rem;
+            color: #333;
+            img{
+                width: 44px/$rem;
+                margin: 0;
+            }
+        }
+        .new_user_share_red_packet_r{
+            background: #e85540;
+            font-size: 14px/$rem;
+            color: #fff;
+            padding: 10px/$rem;
+            border-radius: 4px/$rem;
+        }
+    }
+    .user_share_red_packet{
+        background: #fff;
+        box-align:center;
+        box-pack:justify;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10px/$rem;
+        margin-top: -30px/$rem;
+        .user_share_red_packet_l{
+            position: relative;
+            padding-bottom: 6px/$rem;
+            color: #e85540;
+            z-index: 11;
+            display: flex;
+            box-align:center;
+            align-items: center;
+
+            img{
+                width: 122px/$rem;
+                margin: 0;
+            }
+        }
+        .user_share_red_packet_r{
+            margin-top: 30px/$rem;
+            background:#e85540;
+            color: #fff;
+            font-size: 14px/$rem;
+            padding: 10px/$rem;
+            border-radius: 4px/$rem;
+        }
+    }
+}
+//配送信息
+.addressinfo{
+    background: #fff;
+    .serial-number:before, .delivery-address:before{
+        content: '';
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           -webkit-box-sizing:border-box;
+           border-bottom: 1px solid #e4e4e4;
+
+    }
+    .serial-number, .delivery-address{
+        position: relative;
+        padding: 15px/$rem;
+        .item-name{
+            color: #999;
+            font-size: 15px/$rem;
+        }
+        .item-value{
+            color: #333;
+            font-size: 15px/$rem;
+        }
+    }
+    .delivery-address{
+        display: flex;
+        .item-value{
+            flex: 1;
+            .add{
+                line-height: 24px/$rem;
+                margin-top: 10px/$rem;
+            }
+        }
+    }
+}
+//订单详情
+.orderdetail{
+    .cart-list{
+        background: #fff;
+        li:before{
+           content: '';
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           -webkit-box-sizing:border-box;
+           border-bottom: 1px solid #e4e4e4;
+       }
+        ul li{
+            display: flex;
+            padding: 15px/$rem;
+            position: relative;
+            align-items: center;
+            .flex-left{
+                flex:1;
+                color: #333;
+                font-size: 14px/$rem;
+                display: flex;
+                .photo{
+                    width: 66px/$rem;
+                    height: 66px/$rem;
+                    overflow: hidden;
+                    box-flex:initial;
+                    box-align:center;
+                    align-items:center;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                }
+                .info{
+                    box-flex:1;
+                    flex:1;
+                    padding: 5px/$rem 0 0 10px/$rem;
+                    .name{
+                        color: #333;
+                        font-size: 14px/$rem;
+                        line-height: 20px/$rem;
+                    }
+                    .sauce{
+                        font-size: 12px/$rem;
+                        color: #999;
+                        padding: 8px/$rem 0;
+                    }
+                    .price{
+                        color: #333;
+                        font-size: 14px/$rem;
+                    }
+                }
+            }
+            .flex-right{
+                flex:initial;
+                box-flex:initial;
+                color: #999;
+                .amount{
+                    font-size: 12px/$rem;
+                    margin-right: 20px/$rem;
+                }
+                .price{
+                    width: 60px/$rem;
+                    text-align: right;
+                    color: #999;
+                }
+            }
+        }
+        .cart-other-fee{
+            font-size: 14px/$rem;
+            padding: 8px/$rem 15px/$rem 8px/$rem 0;
+            margin-left: 15px/$rem;
+            .sub-list{
+                width: 100%;
+                display: flex;
+                padding: 8px/$rem 0;
+                justify-content: space-between;
+                .flex-left{
+                    box-flex:1;
+                    flex:1;
+                    color: #333;
+                    font-size: 14px/$rem;
+                    label{
+                        display: flex;
+                        align-items: center;
+                        height: 18px/$rem;
+                        em{
+                            display: flex;
+                            justify-content: center;
+                            position: relative;
+                            width: 14px/$rem;
+                            height: 14px/$rem;
+                            line-height: 16px/$rem;
+                            color: #fff;
+                            background: #fc5c5c;
+                            font-size: 10px/$rem;
+                            margin-right: 5px/$rem;
+                            border-radius: 2px/$rem;
+                            margin-top: -1px/$rem;
+                        }
+                    }
+                }
+                .flex-right{
+                    flex:initial;
+                    box-flex:initial;
+                    color: #999;
+                }
+                .deliveryExpense{
+                    color: #333;
+                    img{
+                        width: 16px/2/$rem;
+                        height: 16px/2/$rem;
+                        margin: 0;
+                        padding: 8px/2/$rem;
+                        background: #000;
+                        border-radius: 4px/2/$rem;
+                        vertical-align: bottom;
+                        margin-right: 4px/2/$rem;
+                    }
+                }
+            }
+        }
+        .cart-price-total{
+            line-height: 14px/$rem;
+            .flex-left{
+                font-size: 12px/$rem;
+                color: #999;
+                .discount{
+                    margin-left: 10px/$rem;
+                    margin-right: 5px/$rem;
+                }
+            }
+            .flex-right{
+                label{
+                    color: #333;
+                    font-size: 14px/$rem;
+                    margin-right: 5px/$rem;
+                }
+                .number{
+                    color:#fc5c5c;
+                }
+            }
+        }
+    }
+}
+//订单状态
+.status-list{
+    padding-left: 55px/$rem;
+    background: #fff;
+    li{
+        border-bottom: 1px solid #e1e1e1;
+        height: 65px/$rem;
+        line-height: 65px/$rem;
+        padding-right: 14px/$rem;
+        display: flex;
+        position: relative;
+        .status{
+            box-flex:1;
+            flex:1;
+            font-size: 14px/$rem;
+            display: flex;
+            box-orient:vertical;
+            box-direction:normal;
+            flex-direction: column;
+            box-pack:center;
+            justify-content: center;
+        }
+        .time{
+            color: #999;
+            font-size: 12px/$rem;
+        }
+
+        .left-dot{
+            position: absolute;
+            left: -24px/$rem;
+            top: 25px/$rem;
+            width: 8px/$rem;
+            height: 8px/$rem;
+            border-radius: 11px/$rem;
+            border:2px/$rem solid #fff;
+            background: #ccc;
+            z-index: 9;
+        }
+    }
+    li:last-child{
+        border-bottom:0;
+    }
+    li:last-child .left-dot{
+        position: absolute;
+        left: -24px/$rem;
+        top: 25px/$rem;
+        width: 11px/$rem;
+        height: 11px/$rem;
+        border-radius: 11px/$rem;
+        background-color: #fff;
+        border: 1px/$rem solid #3b9c05;
+        line-height: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        .left-dot-inner{
+            width: 7px/$rem;
+            height: 7px/$rem;
+            border-radius: 7px/$rem;
+            background-color: #3b9c05;
+            line-height: 1;
+        }
+    }
+}
+.line_rel{
+    position: relative;
+}
+.left-line{
+    border-left: 1px/$rem solid #e1e1e1;
+    position: absolute;
+    left: 37px/$rem;
+    top:30px/$rem;
+}
+
+//底部按钮
+.order-detail-bottom{
+    background: #f1f1f1;
+    ul{
+        padding: 15px/$rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-items: center;
+        li{
+            width: 330px/$rem;
+            height: 44px/$rem;
+            border: 1px/$rem solid #d7d7d7;
+            line-height: 46px/$rem;
+            background: #fff;
+            font-size: 18px/$rem;
+            text-align: center;
+            border-radius: 4px/$rem;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+        }
+        li:nth-child(2){
+            margin-left: 16px/$rem;
+        }
+    }
+    .order-detail-bottom-greenBtn{
+        li{
+            background: #3b9c05;
+            color: #fff;
+            border-color: #3b9c05;
+        }
+    }
+    .order-detail-bottom-grayBtn{
+
+    }
+    .order-detail-contactService{
+        text-align: center;
+        font-size: 10px/$rem;
+        color: #4a90e2;
+        margin: 10px/$rem;
+    }
+}
+//修改订单弹窗开始
+.modifyorder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    display: none;
+    .order-detail-change-order-box_bg{
+        position: fixed;
+        background: rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        left: 0;
+        top: 0;
+    }
+    .slideShow-transition{
+        transition: opacity .3s ease;
+        -webkit-transition: opacity .3s ease;
+    }
+    .order-detail-change-order-active{
+        bottom: 0 !important;
+        transition: bottom .3s !important;
+        -webkit-transition: bottom .3s !important;
+    }
+    .order-detail-change-order{
+        position: fixed;
+        width: 100%;
+        bottom: -100%;
+        transition: bottom .3s;
+        -webkit-transition: bottom .3s;
+        z-index: 1000;
+        .cart-reach-time-nomargin{
+            background: #fff;
+            padding: 0 10px/$rem;
+            .item-head{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                display: -webkit-flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-justify-content: space-between;
+                .item-name{
+                    font-size: 14px/$rem;
+                }
+            }
+            .item-content{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                display: -webkit-flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-align-items: center;
+                .item-select-time{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    display: -webkit-flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    text-align: right;
+                    height: 45px/$rem;
+                    padding: 0 10px/$rem;
+                    position: relative;
+                    top: 6px/$rem;
+                    line-height: 16px/$rem;
+                    .item-select-time-span{
+                        color: #999;
+                    }
+                }
+                .icon-arrow-right{
+                    display: inline-block;
+                    width: 11px/$rem;
+                    height: 11px/$rem;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    vertical-align: middle;
+                    border-top: 1px/$rem solid #d8d8d8;
+                    border-right: 1px/$rem solid #d8d8d8;
+                }
+                .item-select-time-span-week{
+                    color: #fc5c5c;
+                    font-size: 12px/$rem;
+                }
+                .item-select-time .item-select-time-span{
+                    color: #999;
+                    font-size: 12px/$rem;
+                }
+            }
+        }
+    }
+    .delivery-address-selected{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-items: center;
+        background: #fff;
+        height: auto;
+        padding: 10px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        .address{
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -webkit-align-items: stretch;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+            .contact{
+                font-size: 16px/$rem;
+                margin-bottom: 6px/$rem;
+                .address_flag{
+                    background: #3b9c05;
+                    border-radius: 10px/$rem;
+                    padding: 0 7px/$rem;
+                    font-size: 8px/$rem;
+                    color: #fff;
+                    margin-left: 8px/$rem;
+                    position: relative;
+                    top: -3px/$rem;
+                    .address_flag_text{
+                        position: relative;
+                    }
+                }
+            }
+            .add{
+                font-size: 13px/$rem;
+                color: #999;
+                line-height: 18px/$rem;
+            }
+        }
+        .arrow{
+            .icon-arrow-right{
+                display: inline-block;
+                width: 11px/$rem;
+                height: 11px/$rem;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                vertical-align: middle;
+                border-top: 1px/$rem solid #d8d8d8;
+                border-right: 1px/$rem solid #d8d8d8;
+            }
+        }
+    }
+    .order-detail-change-order-btn-box{
+        padding: 15px/$rem;
+        background: #fff;
+        .order-detail-change-order-btn{
+            background: #3b9c05;
+            height: 44px/$rem;
+            line-height: 46px/$rem;
+            text-align: center;
+            border: 1px/$rem solid #3b9c05;
+            border-radius: 4px/$rem;
+            color: #fff;
+            width: 100%;
+        }
+    }
+}
+.paytime{
+    font-size: 12px/$rem;
+    padding-left: 30px/$rem;
+    color: #fbcd5a;
+    background: #fff2d2;
+    line-height: 30px/$rem;
+}
+.topcancel{
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px/$rem;
+    font-size: 14px/$rem;
+    color: #333;
+    .topcancel_l{
+        width: 50%;
+        border-right: 1px solid #e4e4e4;
+        text-align: center;
+    }
+    .topcancel_r{
+        width: 50%;
+        text-align: center;
+        color: #3b9c05;
+    }
+}
+.border-bottom-e1e1e1{
+    position: relative;
+}
+.border-bottom-e1e1e1:before{
+    position: absolute;
+    margin-top: 1px;
+    z-index: 1;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    content: "";
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    border-bottom: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.active .order-detail-change-order{
+    bottom: 0;
+}
+//修改订单弹窗结束
+
+//选择时间组件开始
+.time-selector-box{
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    background: rgba(0,0,0,.5);
+    .time-selector{
+        margin: 10px/$rem;
+        border-radius: 3px/$rem;
+        background: #fff;
+        width: 100%;
+        .time-selector-head{
+            padding: 10px/$rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            display: -webkit-flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            font-size:15px/$rem;
+            .time-selector-name{
+                color: #3b9c05;
+            }
+            .time-selector-close{
+                background: url('https://resource.sa-green.cn/image/orderdetail/close.png');
+                background-size: cover;
+                display: inline-block;
+                width: 16px/$rem;
+                height: 16px/$rem;
+            }
+        }
+        .border-bottom-d7d7d7{
+            position: relative;
+        }
+        .border-bottom-d7d7d7:before{
+            position: absolute;
+            z-index: 1;
+            margin-top: 1px;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            content: "";
+            -webkit-transform: scale(.5);
+            transform: scale(.5);
+            border-bottom: 1px solid #d7d7d7;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .date-list{
+            li span:first-child{
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100px;
+                flex: 0 0 100px;
+                -webkit-flex: 0 0 100px;
+            }
+            li span:nth-child(2){
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100px;
+                flex: 0 0 100px;
+                -webkit-flex: 0 0 100px;
+            }
+            li span:nth-child(3){
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100px;
+                flex: 0 0 100px;
+                -webkit-flex: 0 0 100px;
+            }
+            li{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                display: -webkit-flex;
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                -webkit-justify-content: space-around;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-align-items: center;
+                border-bottom: 1px solid #f1f1f1;
+                height: 40px/$rem;
+                span{
+                    position: relative;
+                    text-align: center;
+                    font-size: 13px/$rem;
+                }
+                .time{
+                    background: url('https://resource.sa-green.cn/image/orderdetail/chooseTime0.png');
+                    background-size: cover;
+                    display: inline-block;
+                    width: 30px/$rem;
+                    height: 16px/$rem;
+                }
+            }
+            li.active span.active{
+                color: #65c07a;
+            }
+            li.active span.active .time{
+                background: url('https://resource.sa-green.cn/image/orderdetail/chooseTime1.png');
+                background-size: cover;
+                display: inline-block;
+                width: 30px/$rem;
+                height: 16px/$rem;
+            }
+        }
+    }
+}

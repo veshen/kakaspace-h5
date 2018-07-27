@@ -1,0 +1,476 @@
+@import "../global/base";
+
+body {
+    background: #f1f1f1;
+}
+//标题
+.order_detail_title{
+    height: 10px/$rem;
+    background: #f1f1f1;
+    padding: 14px/$rem 14px/$rem 10px/$rem;
+    color: #999;
+    font-size: 13px/$rem;
+    position: relative;
+    z-index: 10;
+}
+//悬浮红包
+.float_user_share{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    position: fixed;
+    top: 20%;
+    right: -10px/$rem;
+    z-index: 11;
+    display: none;
+    img{
+        width: 75px/$rem
+    }
+}
+.slideShow-transition{
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+// 发红包
+.order_red{
+    background: #f1f1f1;
+    .new_user_share_red_packet{
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px/$rem 10px/$rem;
+        .new_red_title{
+            padding-bottom: 5px/$rem;
+        }
+        .new_user_l{
+            display: flex;
+            align-items: center;
+            .new_user_l_img{
+                margin-right: 10px/$rem;
+            }
+        }
+        .new_user_share_red_packet_l{
+            font-size: 14px/$rem;
+            color: #333;
+            img{
+                width: 44px/$rem;
+                margin: 0;
+            }
+        }
+        .new_user_share_red_packet_r{
+            background: #e85540;
+            font-size: 14px/$rem;
+            color: #fff;
+            padding: 10px/$rem;
+            border-radius: 4px/$rem;
+        }
+    }
+    .user_share_red_packet{
+        background: #fff;
+        box-align:center;
+        box-pack:justify;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10px/$rem;
+        margin-top: -30px/$rem;
+        .user_share_red_packet_l{
+            position: relative;
+            padding-bottom: 6px/$rem;
+            color: #e85540;
+            z-index: 11;
+            display: flex;
+            box-align:center;
+            align-items: center;
+
+            img{
+                width: 122px/$rem;
+                margin: 0;
+            }
+        }
+        .user_share_red_packet_r{
+            margin-top: 30px/$rem;
+            background:#e85540;
+            color: #fff;
+            font-size: 14px/$rem;
+            padding: 10px/$rem;
+            border-radius: 4px/$rem;
+        }
+    }
+}
+//配送信息
+.addressinfo{
+    background: #fff;
+    .serial-number:before, .delivery-address:before{
+        content: '';
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           -webkit-box-sizing:border-box;
+           border-bottom: 1px solid #e4e4e4;
+
+    }
+    .serial-number, .delivery-address{
+        position: relative;
+        padding: 15px/$rem;
+        .item-name{
+            color: #999;
+            font-size: 15px/$rem;
+        }
+        .item-value{
+            color: #333;
+            font-size: 15px/$rem;
+        }
+    }
+    .delivery-address{
+        display: flex;
+        .item-value{
+            flex: 1;
+            .add{
+                line-height: 24px/$rem;
+                margin-top: 10px/$rem;
+            }
+        }
+    }
+}
+//订单详情
+.orderdetail{
+    .order_create_plan{
+        margin: 0 10px/$rem 10px/$rem;
+        position: relative;
+        .order_create_plan_head{
+            background: #2c2c2c;
+            color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 40px/$rem;
+            line-height: 1.5;
+            padding: 0 10px/$rem;
+            border-radius: 3px/$rem 3px/$rem 0 0;
+            font-size: 14px/$rem;
+        }
+        .order_create_plan_body{
+            background: #fff;
+            border-radius: 0 0 3px 3px;
+            padding-left: 20px/$rem;
+            .order_create_plan_list{
+
+                .order_create_plan_item{
+                    border-bottom: 1px dashed #e4e4e4;
+                    .order_create_plan_item_top{
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        padding-top: 5px/$rem;
+                        height: 25px/$rem;
+                        line-height: 25px/$rem;
+                        font-size: 14px/$rem;
+                        color: #333;
+                        .order_create_plan_item_point{
+                            border: 1px solid #3b9c05;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 100%;
+                            text-align: center;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            position: relative;
+                            left: -10px;
+                            z-index: 10;
+                            background: #fff;
+                            display: flex;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            em{
+                                width: 3px/$rem;
+                                height: 3px/$rem;
+                                border-radius: 3px/$rem;
+                                background: #3b9c05;
+                                display: block;
+                                font-style: normal;
+                            }
+                        }
+                        .order_create_plan_item_tag{
+                            display: inline-block;
+                            border: 1px/$rem solid #3b9c05;
+                            color: #3b9c05;
+                            font-size: 10px/$rem;
+                            border-radius: 3px/$rem;
+                            height: 14px/$rem;
+                            line-height: 14px/$rem;
+                            margin-left: 4px/$rem;
+                            padding: 0 3px/$rem;
+                            position: relative;
+                            top: -1px/$rem;
+                        }
+                        .order_create_plan_item_state{
+                            -webkit-box-flex: 1;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            text-align: right;
+                            margin-right: 8px/$rem;
+                            font-size: 12px/$rem;
+                            color: #a3a3a3;
+                        }
+                    }
+                    .order_create_plan_item_center{
+                        position: relative;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        padding: 8px/$rem;
+                        background: #f6f6f6;
+                        .order_create_plan_item_img{
+                            img{
+                                width: 45px/$rem;
+                                height: 45px/$rem;
+                                border-radius: 3px/$rem;
+                                margin: 0 0;
+                            }
+                        }
+                        .order_create_plan_item_info{
+                            -webkit-box-flex: 1;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            margin: 0 10px/$rem;
+                            .order_create_plan_item_info_top{
+                                font-size: 14px/$rem;
+                                color: #333;
+                                margin-bottom: 8px/$rem;
+                            }
+                            .order_create_plan_item_info_bottom{
+                                font-size: 12px/$rem;
+                                color: #9a9a9a;
+                            }
+                        }
+                        .order_create_plan_item_price{
+                            font-size: 15px/$rem;
+                            color: #999;
+                            em{
+                                font-size: 12px/$rem;
+                                font-style: normal;
+                            }
+                        }
+                    }
+                    .order_create_plan_item_bottom{
+                        position: relative;
+                        .order_create_plan_item_address{
+                            padding: 10px/$rem 0 10px/$rem 63px/$rem;
+                            font-size: 12px/$rem;
+                            color: #999;
+                            word-break: break-all;
+                            .order_create_plan_item_address_top{
+                                margin-bottom: 6px/$rem;
+                                span{
+                                    margin-right: 6px/$rem;
+                                }
+                                .order_create_plan_item_address_tag{
+                                    border-radius: 12px/$rem;
+                                    padding: 0 5px/$rem;
+                                    box-sizing: border-box;
+                                    line-height: 13px/$rem;
+                                    margin-left: 0;
+                                    display: inline-block;
+                                    border: 1px/$rem solid #3b9c05;
+                                    color: #3b9c05;
+                                    font-size: 10px/$rem;
+                                    height: 14px/$rem;
+                                    position: relative;
+                                    top: -1px/$rem;
+                                }
+                            }
+                            .order_create_plan_item_address_bottom{
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                .order_create_plan_item_address_area{
+                                    -webkit-box-flex: 0;
+                                    flex: 0 0 50px/$rem;
+                                    width: 50px/$rem;
+                                    display: inline-block;
+                                }
+                                .order_create_plan_item_address_info{
+                                    -webkit-box-flex: 1;
+                                    flex: 1 1 auto;
+                                    line-height: 1.5;
+                                    padding-right: 20px/$rem;
+                                }
+                            }
+                        }
+                        .order_create_plan_item_bottom_icon{
+                            position: absolute;
+                            right: 10px/$rem;
+                            top: 0;
+                            height: 100%;
+                            display: flex;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            .icon-right{
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+                .order_create_plan_item:last-child{
+                    border:0;
+                }
+
+            }
+            .order_create_plan_line{
+                top: 54px;
+                left: 14px/$rem;
+
+                pointer-events: none;
+                position: absolute;
+                width: 1px;
+                background: #e1e1e1;
+                z-index: 9;
+            }
+        }
+    }
+    .plan_order_discount{
+        .cart-list{
+            background-color: #fff;
+            li{
+                padding: 15px/$rem;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                .left{
+                    color: #999;
+                    font-size: 15px/$rem;
+                    flex: 1;
+                }
+                .right{
+                    font-size: 14px/$rem;
+                    .unit{
+                        color: #fc5c5c;
+                    }
+                }
+                .deliveryExpense{
+                    img{
+                        width: 16px/2/$rem;
+                        height: 16px/2/$rem;
+                        margin: 0;
+                        padding: 8px/2/$rem;
+                        background: #000;
+                        border-radius: 4px/2/$rem;
+                        vertical-align: bottom;
+                        margin-right: 4px/2/$rem;
+                    }
+                }
+            }
+            li:before{
+                content: '';
+               position:absolute;
+               left:-50%;
+               top: -50%;
+               width:200%;
+               height: 200%;
+               transform:scale(.5);
+               -webkit-box-sizing:border-box;
+               border-bottom: 1px solid #e4e4e4;
+            }
+        }
+    }
+}
+//底部按钮
+.order-detail-bottom{
+    background: #f1f1f1;
+    ul{
+        padding: 15px/$rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-items: center;
+        li{
+            width: 330px/$rem;
+            height: 44px/$rem;
+            border: 1px/$rem solid #d7d7d7;
+            line-height: 46px/$rem;
+            background: #fff;
+            font-size: 18px/$rem;
+            text-align: center;
+            border-radius: 4px/$rem;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+        }
+        li:nth-child(2){
+            margin-left: 16px/$rem;
+        }
+    }
+    .order-detail-bottom-greenBtn{
+        li{
+            background: #3b9c05;
+            color: #fff;
+            border-color: #3b9c05;
+        }
+    }
+    .order-detail-bottom-grayBtn{
+        padding-bottom: 0 !important;
+    }
+    .order-detail-contactService{
+        text-align: center;
+        font-size: 10px/$rem;
+        color: #4a90e2;
+        margin: 10px/$rem;
+    }
+}
+//为支付，倒计时
+.paytime{
+    font-size: 12px/$rem;
+    padding-left: 30px/$rem;
+    color: #fbcd5a;
+    background: #fff2d2;
+    line-height: 30px/$rem;
+}
+//未支付，倒计时按钮
+.topcancel{
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px/$rem;
+    font-size: 14px/$rem;
+    color: #333;
+    border-bottom: 1px solid #e4e4e4;
+    .topcancel_l{
+        width: 50%;
+        border-right: 1px solid #e4e4e4;
+        text-align: center;
+    }
+    .topcancel_r{
+        width: 50%;
+        text-align: center;
+        color: #3b9c05;
+    }
+}

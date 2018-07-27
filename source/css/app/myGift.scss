@@ -1,0 +1,181 @@
+@import "../global/base";
+
+body{
+    background: #fff !important;
+    font-weight: 300;
+}
+.gift_topimg{
+    img{
+        width: 100%;
+    }
+}
+.send_gift_btn{
+    margin: 10px/$rem;
+    color: #fff;
+    div{
+        background: #3b9c05;
+        width: 200px/$rem;
+        height: 30px/$rem;
+        line-height: 30px/$rem;
+        text-align: center;
+        border-radius: 8px/$rem;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+}
+.gift_tab{
+    width: 100%;
+
+    ul:before{
+       content: '';
+       pointer-events:none;
+       position:absolute;
+       left:-50%;
+       top: -50%;
+       width:200%;
+       height: 200%;
+       transform:scale(.5);
+       pointer-events:none;
+       -webkit-box-sizing:border-box;
+       border-bottom: 1px solid #d9d9d9;
+       margin-top: -1px;
+   }
+    .ul{
+        display: flex;
+        background: #fff;
+        width: 100%;
+        position: relative;
+        li{
+            text-align: center;
+            padding-top: 19px/$rem;
+            width: 49%;
+            float: left;
+            .tab_title1{
+                font-size: 16px/$rem;
+                color: #111;
+                padding-bottom: 5px/$rem;
+            }
+            .tab_title2{
+                min-width: 100px/$rem;
+                margin:0 auto;
+                font-size: 12px/$rem;
+                color: #999;
+                padding-bottom: 16px/$rem;
+            }
+        }
+        .line_tab{
+            width: 1px;
+            div{
+                height: 30px/$rem;
+                background: #999;
+            }
+        }
+        .tabActive{
+            .tab_title1{
+                transition: all 0.3;
+            }
+            .tab_title2{
+                transition: all 0.3;
+                span{
+                    border-bottom: 1.5px/$rem solid #1C9B4D;
+                    padding-left: 15px/$rem;
+                    padding-right: 15px/$rem;
+                    padding-bottom: 12px/$rem;
+                }
+            }
+        }
+    }
+}
+.gift_List{
+    transition: all 0.3s;
+    ul{
+        .li_div:before{
+           content: '';
+           pointer-events:none;
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           pointer-events:none;
+           -webkit-box-sizing:border-box;
+           border-bottom: 1px solid #e5e5e5;
+           margin-top: -1px;
+       }
+        li{
+            background: #fff;
+            width: 100%;
+            .li_div{
+                position: relative;
+                margin: 15px/$rem 0 15px/$rem 15px/$rem;
+                padding-bottom: 15px/$rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .gift_info{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .gift_img{
+                        width: 75px/$rem;
+                        img{
+                            width: 60px/$rem;
+                        }
+                    }
+                    .gift_des{
+                        width: 100%;
+                        padding-left: 10px/$rem;
+                        text-align: left;
+                        .gift_des_time{
+                            color:#999;
+                            font-size: 12px/$rem;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-right: 15px/$rem;
+                            .replay_btn{
+                                color: #1c9b4d;
+                                font-size: 14px/$rem;
+                            }
+                            .haveActive{
+                                color: #1c9b4d;
+                            }
+                        }
+                        .gift_des_price{
+                            color: #333;
+                            padding-bottom: 5px/$rem;
+                            font-size: 16px/$rem;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-right: 15px/$rem;
+                            .from_w{
+                                color: 999;
+                                font-size: 12px/$rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .list_state{
+                font-size: 12px/$rem;
+                color: #333;
+                padding-right: 10px/$rem;
+            }
+            .list_who{
+                padding-right: 10px/$rem;
+                .list_form{
+                    font-size: 13px/$rem;
+                    color: #333;
+                }
+                .huiz{
+                    text-align: right;
+                    width: auto;
+                    span{
+                        font-size: 12px/$rem;
+                        color: #3b9c05;
+                    }
+                }
+            }
+        }
+    }
+}

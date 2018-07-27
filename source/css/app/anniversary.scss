@@ -1,0 +1,152 @@
+@import "../global/base";
+
+body{
+
+}
+.endMark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    .markContent{
+        width: 573px/2/$rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        img{
+            display: block;
+            width: 573px/2/$rem;
+            height: 427px/2/$rem;
+            margin-bottom: 80px/2/$rem;
+        }
+        a{
+            display: block;
+            width: 400px/2/$rem;
+            height: 88px/2/$rem;
+            color: #fff;
+            background: #1c9b4d;
+            text-align: center;
+            line-height: 88px/2/$rem;
+            font-size: 30px/2/$rem;
+            border-radius: 44px/2/$rem;
+            margin: 0 auto;
+        }
+    }
+}
+.container{
+    position: relative;
+    img{
+        display: block;
+    }
+    .getLoadCopyBtn{
+        position: absolute;
+        width: 72px/2/$rem;
+        height: 27px/2/$rem;
+        top: 20px/2/$rem;
+        right: 30px/2/$rem;
+    }
+    .content{
+        background: url('https://resource.sa-green.cn/image/jpg/%E4%B8%BB%E9%A1%B5%E9%9D%A2_03.jpg') no-repeat 0 0;
+        background-size: 100% 100%;
+        height: 463px/2/$rem;
+        .scText{
+            width: 380px/2/$rem;
+            height: 36px/2/$rem;
+            margin: 0 auto;
+            background: #efa2c4;
+            box-shadow: 0 1px 0 0 rgba(255,255,255,0.80);
+            border-radius: 100px/2/$rem;
+            text-align: center;
+            font-size: 24px/2/$rem;
+            color: #FFFFFF;
+            line-height: 36px/2/$rem;
+        }
+        .mainBox{
+            display: flex;
+            width: 650px/2/$rem;
+            margin: 0 auto;
+            padding-top: 20px/2/$rem;
+            padding-bottom: 30px/2/$rem;
+            justify-content: space-between;
+            div{
+                width: 312px/2/$rem;
+                height: 392px/2/$rem;
+                position: relative;
+                a{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .buyNow{
+        position: relative;
+        a{
+            position: absolute;
+            display: block;
+            width: 635px/2/$rem;
+            height: 131px/2/$rem;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,0)
+        }
+    }
+    .rule{
+        position: relative;
+        .ruleBtn{
+            position: absolute;
+            display: block;
+            width: 200px/2/$rem;
+            height: 35px/2/$rem;
+            bottom: 72px/2/$rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .mark{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+        .hideBtn{
+            position: absolute;
+            display: block;
+            width: 53px/2/$rem;
+            height: 53px/2/$rem;
+            right: 65px/2/$rem;
+            top: 30px/2/$rem;
+        }
+        .content-f{
+            position: absolute;
+            top: 10%;
+            left : 50%;
+            transform: translate(-50%,-10%);
+            .activityRulesTitle{
+                display: block;
+                width: 203px/2/$rem;
+                height: 100px/2/$rem;
+                margin: 0 auto 40px/2/$rem;
+            }
+            .activityRulesContent{
+                width: 593px/2/$rem;
+                .rulesText{
+                    font-size: 24px/2/$rem;
+                    line-height: 40px/2/$rem;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

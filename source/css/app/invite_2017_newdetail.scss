@@ -1,0 +1,22 @@
+@import "../global/base";
+
+.container{
+    .header{
+        img{
+            display: block;
+        }
+    }
+    .content{
+        padding: 0 50px/2/$rem;
+        background: #d82135;
+        position: relative;
+        overflow: initial;
+        height: 900px/2/$rem;
+    }
+    .footer{
+        img{
+            display: block;
+        }
+    }
+
+}

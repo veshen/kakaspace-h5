@@ -1,0 +1,683 @@
+@import "../global/base";
+
+body{
+    background: url('https://resource.sa-green.cn/image/jpg/%E6%B8%B8%E6%88%8F%E9%A1%B5%E9%9D%A2_01-2.jpg') no-repeat 0 0 #ffcce0;
+    background-size: 100% auto;
+    height: 500px;
+}
+.endMark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    .markContent{
+        width: 573px/2/$rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        img{
+            display: block;
+            width: 573px/2/$rem;
+            height: 427px/2/$rem;
+            margin-bottom: 80px/2/$rem;
+        }
+        a{
+            display: block;
+            width: 400px/2/$rem;
+            height: 88px/2/$rem;
+            color: #fff;
+            background: #1c9b4d;
+            text-align: center;
+            line-height: 88px/2/$rem;
+            font-size: 30px/2/$rem;
+            border-radius: 44px/2/$rem;
+            margin: 0 auto;
+        }
+    }
+}
+.container{
+    padding: 0 0 100px/2/$rem;;
+    .header{
+        height: 190px/2/$rem;
+        position: relative;
+        img{
+            position: absolute;
+            display: block;
+            width: 72px/2/$rem;
+            height: 27px/2/$rem;
+            top: 20px/2/$rem;
+            right: 30px/2/$rem;
+        }
+    }
+    .collectChipsBox{
+        margin-bottom: 30px/2/$rem;
+        padding: 0 30px/2/$rem;
+        .title{
+            height: 218px/2/$rem;
+            background: url('https://resource.sa-green.cn/image/jpg/%E5%8D%A1%E7%89%8C-%E5%A4%B4%E5%9B%BE-squashed2.png') no-repeat 0 0;
+            background-size: 100% 100%;
+            position: relative;
+
+            img{
+                width: 108px/2/$rem;
+                height: 108px/2/$rem;
+                border: 4px/2/$rem solid #F187BB;
+                border-radius: 50%;
+                position: absolute;
+                left: 58px/2/$rem;
+                bottom: 20px/2/$rem;
+            }
+            p{
+                position: absolute;
+                left: 194px/2/$rem;
+                color: #fff;
+            }
+            .userName{
+                bottom: 68px/2/$rem;
+                font-size: 24px/2/$rem;
+                line-height: 24px/2/$rem;
+            }
+            .cardCount{
+                bottom: 30px/2/$rem;
+                font-size: 24px/2/$rem;
+                line-height: 24px/2/$rem;
+            }
+        }
+        .content{
+            background: #fff;
+            border-radius: 0 0 8px/2/$rem 8px/2/$rem;
+            .tips{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 35px/2/$rem;
+                padding: 26px/2/$rem 22px/2/$rem 30px/2/$rem 30px/2/$rem;
+                p{
+                    font-size: 24px/2/$rem;
+                    color: #666666;
+                    span{
+                        color: #FF82BA;
+                    }
+                }
+                img{
+                    width: 124px/2/$rem;
+                    height: 35px/2/$rem;
+                }
+            }
+            .cardList{
+                margin: 0 30px/2/$rem;
+                display: flex;
+                flex-wrap:wrap;
+                justify-content:space-between;
+                li{
+                    width: 192px/2/$rem;
+                    height: 310px/2/$rem;
+                    margin-bottom: 30px/2/$rem;
+                    position: relative;
+                    .cardCount{
+                        position: absolute;
+                        background: #fe264f;
+                        border-radius: 50%;
+                        width: 42px/2/$rem;
+                        height: 42px/2/$rem;
+                        top: -16px/2/$rem;
+                        right: -16px/2/$rem;
+                        text-align: center;
+                        font-size: 30px/2/$rem;
+                        color: #FFFFFF;
+                        line-height: 42px/2/$rem;
+                    }
+                }
+            }
+        }
+    }
+    .raidersBox{
+        margin-bottom: 30px/2/$rem;
+        padding: 0 30px/2/$rem;
+        .title{
+            height: 138px/2/$rem;
+            background: url('https://resource.sa-green.cn/image/base/%E6%94%BB%E7%95%A5-%E5%A4%B4%E5%9B%BE.png') no-repeat 0 0;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .content{
+            background: #fff;
+            padding: 40px/2/$rem 0;
+            border-radius: 0 0 8px/2/$rem 8px/2/$rem;
+            .raiders{
+                div{
+                    text-align: center;
+                    span{
+
+                    }
+                }
+            }
+            .raidersPic{
+                width: 517px/2/$rem;
+                height: 674px/2/$rem;
+                display: block;
+                margin: 0 auto 40px/2/$rem;
+            }
+            .buyNowBtn{
+                width: 344px/2/$rem;
+                height: 61px/2/$rem;
+                margin: 0 auto;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .interactionListBox{
+        margin-bottom: 40px/2/$rem;
+        padding: 0 30px/2/$rem;
+        .title{
+            height: 122px/2/$rem;
+            background: url('https://resource.sa-green.cn/image/jpg/%E5%A5%BD%E5%8F%8B-%E5%A4%B4%E5%9B%BE.png') no-repeat 0 0;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .content{
+            background: #fff;
+            padding: 30px/2/$rem 0;
+            border-radius: 0 0 8px/2/$rem 8px/2/$rem;
+            .interactionList{
+                margin: 0 30px/2/$rem;
+                li{
+                    position: relative;
+                    @include retinabb(#E4E4E4);
+                    height: 80px/2/$rem;
+                    padding-bottom: 20px/2/$rem;
+                    margin-bottom: 20px/2/$rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .leftInt{
+                        margin-right: 24px/2/$rem;
+                        overflow: hidden;
+                        img{
+                            display: block;
+                            width: 80px/2/$rem;
+                            height: 80px/2/$rem;
+                            border-radius: 50%;
+                        }
+                    }
+                    .text{
+                        flex-grow:1;
+                        h3{
+                            font-size: 24px/2/$rem;
+                            line-height: 24px/2/$rem;
+                            color: #666666;
+                            margin-bottom: 12px/2/$rem;
+                        }
+                        p{
+                            font-size: 20px/2/$rem;
+                            line-height: 20px/2/$rem;
+                            color: #999999;
+                        }
+                    }
+                    .btn{
+                        width: 136px/2/$rem;
+                        height: 44px/2/$rem;
+                    }
+                }
+            }
+            .loadMore{
+                padding-top: 10px/2/$rem;
+                p{
+                    text-align: center;
+                    color: #999;
+                    font-size: 22px/2/$rem;
+                }
+                div{
+                    margin: 10px/2/$rem auto 0;
+                }
+            }
+        }
+    }
+    .activityRulesBox{
+        .rulesBtnBox{
+            position: relative;
+            a{
+                position: absolute;
+                display: block;
+                width: 198px/2/$rem;
+                height: 33px/2/$rem;
+                bottom: 58px/2/$rem;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(255,255,255,0);
+            }
+        }
+    }
+    .mark{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+        .hideBtn{
+            position: absolute;
+            display: block;
+            width: 53px/2/$rem;
+            height: 53px/2/$rem;
+            right: 65px/2/$rem;
+            top: 30px/2/$rem;
+        }
+        .sharePic{
+            display: block;
+            width: 499px/2/$rem;
+            height: 701px/2/$rem;
+            position: absolute;
+            right: 50px/2/$rem;
+            top: -72px/2/$rem;
+        }
+        .raidersPic{
+            display: block;
+            width: 594px/2/$rem;
+            height: 879px/2/$rem;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%,-30%);
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            a{
+                position: absolute;
+                display: block;
+                width: 344px/2/$rem;
+                height: 61px/2/$rem;
+                background: rgba(255,255,255,0);
+                bottom: 45px/2/$rem;
+                left: 120px/2/$rem;
+            }
+        }
+        #triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-left: 10px solid #fff;
+            border-bottom: 5px solid transparent;
+        }
+        .content-a{
+            position: absolute;
+            width: 100%;
+            top: 30%;
+            transform: translateY(-30%);
+            .title{
+                position: absolute;
+                top: 40px/2/$rem;
+                width: 100%;
+                font-size: 42px/2/$rem;
+                color: #FFFFFF;
+                line-height: 42px/2/$rem;
+                text-align: center;
+            }
+            img{
+                display: block;
+                width: 478px/2/$rem;
+                height: 597px/2/$rem;
+                margin: 0 auto 30px/2/$rem;
+            }
+            .btn{
+                width: 420px/2/$rem;
+                height: 80px/2/$rem;
+                background: #FF82BA;
+                border-radius: 100px/2/$rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                p{
+                    font-size: 32px/2/$rem;
+                    color: #FFFFFF;
+                    line-height: 32px/2/$rem;
+                    margin-right: 10px/2/$rem;
+                }
+            }
+        }
+        .content-b{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            .title{
+                font-size: 42px/2/$rem;
+                color: #FFFFFF;
+                line-height: 42px/2/$rem;
+                text-align: center;
+                margin-bottom: 47px/2/$rem;
+            }
+            .cardList{
+                margin: 0 60px/2/$rem;
+                display: flex;
+                flex-wrap:wrap;
+                justify-content:space-between;
+                li{
+                    width: 192px/2/$rem;
+                    height: 310px/2/$rem;
+                    margin-bottom: 30px/2/$rem;
+                    position: relative;
+                    border: 6px/2/$rem solid rgba(255,255,255,0);
+                    border-radius: 10px/2/$rem;
+                    box-sizing: border-box;
+                    .cardPic{
+                        position: absolute;
+                        display: block;
+                        left: -1px/2/$rem;
+                        top: 0;
+                        width: 192px/2/$rem;
+                        height: 306px/2/$rem;
+                    }
+                    .choosePic{
+                        position: absolute;
+                        display: block;
+                        width: 43px/2/$rem;
+                        height: 43px/2/$rem;
+                        bottom: -20px/2/$rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 2;
+                    }
+                    .cardCount{
+                        position: absolute;
+                        background: #F493A9;
+                        border-radius: 50%;
+                        width: 32px/2/$rem;
+                        height: 32px/2/$rem;
+                        top: -16px/2/$rem;
+                        right: -16px/2/$rem;
+                        text-align: center;
+                        font-size: 24px/2/$rem;
+                        color: #FFFFFF;
+                        line-height: 32px/2/$rem;
+                    }
+                }
+                .active{
+                    border: 6px/2/$rem solid #FB6489;
+                    border-radius: 10px/2/$rem;
+                    box-sizing: border-box;
+                }
+            }
+            .btn{
+                width: 420px/2/$rem;
+                height: 80px/2/$rem;
+                background: #FF82BA;
+                border-radius: 100px/2/$rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                p{
+                    font-size: 32px/2/$rem;
+                    color: #FFFFFF;
+                    line-height: 32px/2/$rem;
+                    margin-right: 10px/2/$rem;
+                }
+            }
+        }
+        .content-c{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            .titleA{
+                position: absolute;
+                top: 35px/2/$rem;
+                width: 100%;
+                font-size: 42px/2/$rem;
+                color: #FFFFFF;
+                line-height: 42px/2/$rem;
+                text-align: center;
+            }
+            .title{
+                position: absolute;
+                top: 20px/2/$rem;
+                width: 100%;
+                font-size: 42px/2/$rem;
+                color: #FFFFFF;
+                line-height: 42px/2/$rem;
+                text-align: center;
+            }
+            .subTitle{
+                position: absolute;
+                top: 78px/2/$rem;
+                width: 100%;
+                font-size: 24px/2/$rem;
+                color: #FFFFFF;
+                line-height: 24px/2/$rem;
+                text-align: center;
+            }
+            img{
+                display: block;
+                width: 478px/2/$rem;
+                height: 597px/2/$rem;
+                margin: 0 auto;
+            }
+        }
+        .content-d{
+            position: absolute;
+            top: 30%;
+            left : 50%;
+            transform: translate(-50%,-30%);
+            #titlePic{
+                display: block;
+                width: 206px/2/$rem;
+                height: 83px/2/$rem;
+                margin: 0 auto 30px/2/$rem;
+            }
+            .giveInfo{
+                dl{
+                    dd{
+                        font-size: 24px/2/$rem;
+                        color: #FEA6B3;
+                        line-height: 42px/2/$rem;
+                    }
+                    dt{
+                        p{
+                            font-size: 24px/2/$rem;
+                            color: #fff;
+                            line-height: 42px/2/$rem;
+                            min-width: 400px/2/$rem;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+                max-height: 700px/2/$rem;
+                overflow: scroll;
+            }
+            .givenone{
+                img{
+                    display: block;
+                    width: 377px/2/$rem;
+                    height: 272px/2/$rem;
+                    margin: 60px/2/$rem auto 30px/2/$rem;
+                }
+                .tiA{
+                    font-size: 24px/2/$rem;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-bottom: 16px/2/$rem;
+                }
+                .tiB{
+                    font-size: 24px/2/$rem;
+                    color: #FBA1CA;
+                    text-align: center;
+                }
+            }
+        }
+        .content-e{
+            display: flex;
+            justify-content: center;
+            flex-direction:column;
+            #titlePic{
+                display: block;
+                width: 750px/2/$rem;
+                height: 164px/2/$rem;
+                margin-top: 200px/2/$rem;
+                margin-bottom: 30px/2/$rem;
+            }
+            .titleBox{
+                display: block;
+                width: 750px/2/$rem;
+                height: 154px/2/$rem;
+                margin-top: 200px/2/$rem;
+                margin-bottom: 30px/2/$rem;
+                background: url('https://resource.sa-green.cn/image/jpg/%E6%81%AD%E5%96%9C%E4%BD%A0%EF%BC%8C%E8%8E%B7%E5%BE%973%E5%BC%A0%E5%91%A8%E5%B9%B4%E5%8D%A1bbbb.png') no-repeat 0 0;
+                background-size: 100% 100%;
+                p{
+                    margin-top: 106px/2/$rem;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 35px/2/$rem;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px/2/$rem;
+                li{
+                    width: 192px/2/$rem;
+                    height: 310px/2/$rem;
+                    margin-right: 30px/2/$rem;
+                }
+                li:last-child{
+                    margin-right: 0;
+                }
+            }
+            .tips{
+                text-align: center;
+                color: #fff;
+                font-size: 22px/2/$rem;
+                margin: 26px/2/$rem auto;
+            }
+            .btn{
+                width: 420px/2/$rem;
+                height: 80px/2/$rem;
+                background: #FF82BA;
+                border-radius: 100px/2/$rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                p{
+                    font-size: 32px/2/$rem;
+                    color: #FFFFFF;
+                    line-height: 32px/2/$rem;
+                    margin-right: 10px/2/$rem;
+                }
+            }
+        }
+        .content-f{
+            position: absolute;
+            top: 10%;
+            left : 50%;
+            transform: translate(-50%,-10%);
+            .activityRulesTitle{
+                display: block;
+                width: 203px/2/$rem;
+                height: 100px/2/$rem;
+                margin: 0 auto 40px/2/$rem;
+            }
+            .activityRulesContent{
+                width: 593px/2/$rem;
+                .rulesText{
+                    font-size: 24px/2/$rem;
+                    line-height: 40px/2/$rem;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .footer-btn{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 140px/2/$rem;
+        background: #fff;
+        box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.30);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn{
+            width: 618px/2/$rem;
+            height: 100px/2/$rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 32px/2/$rem;
+                color: #FFFFFF;
+                margin-right: 10px/2/$rem;
+            }
+            #triangle-right {
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 5px solid transparent;
+            }
+        }
+        .pink{
+            background: url('https://resource.sa-green.cn/image/jpg/BTN-%E6%88%90%E5%8A%9F.png') no-repeat 0 0;
+            background-size: 100% 100%;
+        }
+        .green{
+            background: url('https://resource.sa-green.cn/image/jpg/btn-%E6%8C%89%E9%92%AE.png') no-repeat 0 0;
+            background-size: 100% 100%;
+        }
+    }
+}
+.plan_tip_scroll{
+
+}
+.plan_tip_scroll{
+
+}
+.scroll_txt_list{
+    width: 380px/2/$rem !important;
+    height: 36px/2/$rem;
+    margin: 14px/2/$rem auto 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 28px/2/$rem;
+    background: #8ac4dc;
+    border-radius: 100px/2/$rem;
+    .scroll_txt_list_inner{
+        em{
+            i{
+                color: #fff !important;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                font-size: 24px/2/$rem !important;
+                line-height: 36px/2/$rem !important;
+            }
+
+
+
+        }
+
+    }
+
+}
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #999;
+}

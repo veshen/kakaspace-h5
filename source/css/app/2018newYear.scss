@@ -1,0 +1,58 @@
+@import "../global/base";
+.container{
+    div{
+        position: relative;
+        img{
+            display: block;
+        }
+    }
+    img{
+        display: block;
+    }
+    .buy{
+        a{
+            display: block;
+            width: 514px/2/$rem;
+            height: 100%;
+            background: rgba(255, 255, 255, 0);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9;
+        }
+    }
+    .ruler{
+        a{
+            display: block;
+            width: 290px/2/$rem;
+            height: 100%;
+            background: rgba(255, 255, 255, 0);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9;
+        }
+    }
+}
+.VipRuler{
+    width: 520px/2/$rem;
+    border-radius: 20px/2/$rem;
+    background: #fff;
+    overflow: hidden;
+    .title{
+        height: 88px/2/$rem;
+        background: #1C9B4D;
+        text-align: center;
+        line-height: 88px/2/$rem;
+        font-size: 34px/2/$rem;
+        color: #fff;
+    }
+    .content{
+        padding: 20px/2/$rem 30px/2/$rem 30px/2/$rem;
+        font-size: 26px/2/$rem;
+        line-height: 42px/2/$rem;
+        color: #333333;
+    }
+}

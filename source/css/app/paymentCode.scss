@@ -1,0 +1,59 @@
+@import "../global/base";
+
+body {
+    padding-bottom: 220px/2/$rem;
+    background: #f1f1f1;
+}
+.title{
+    text-align: center;
+    font-size: 30px/2/$rem;
+    color:#666666;
+    line-height: 90px/2/$rem;
+}
+.codeImgBox{
+    background: #fff;
+    position: relative;
+    padding: 20px/2/$rem 0 30px/2/$rem;
+    @include retinabt(#d9d9d9);
+    img{
+        display: block;
+        width: 460px/2/$rem;
+        height: 115px/2/$rem;
+        margin: 0 auto;
+    }
+    p{
+        text-align: center;
+        color: #666666;
+        font-size: 24px/2/$rem;
+    }
+    span{
+        padding: 0 8px/2/$rem;
+    }
+}
+.qrCodeBox{
+    background: #fff;
+    padding: 30px/2/$rem 0 44px/2/$rem;
+    position: relative;
+    @include retinabt(#e5e5e5);
+    img{
+        display: block;
+        width: 290px/2/$rem;
+        height: 290px/2/$rem;
+        margin: 0 auto;
+    }
+}
+.bg{
+    padding-top: 192px/2/$rem;
+    p{
+        text-align: center;
+        font-size: 30px/2/$rem;
+        color: #999;
+    }
+    img{
+        position: fixed;
+        bottom: 0;
+        left: 75px/2/$rem;
+        width: 600px/2/$rem;
+        height: 270px/2/$rem;
+    }
+}

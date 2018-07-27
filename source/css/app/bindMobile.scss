@@ -1,0 +1,101 @@
+@import "../global/base";
+body{
+    padding-bottom: 220px/2/$rem;
+    background: url('https://resource.sa-green.cn/images/base/Bitmap.png') no-repeat 0 0 #1b1b1f;
+    background-size: 100% auto;
+}
+
+.bindMobileBox{
+    .logoBox{
+        height: 320px/2/$rem;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 400px/2/$rem;
+            height: 100px/2/$rem;
+            margin: 146px/2/$rem auto 0;
+        }
+    }
+    .imgBox{
+        img{
+            display: block;
+        }
+    }
+    .bindMobileContent{
+        margin: 0 65px/2/$rem 120px/2/$rem;
+        .title{
+            color: #666666;
+            font-size: 24px/2/$rem;
+            margin-bottom: 30px/2/$rem;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            p{
+                padding: 0 10px/2/$rem;
+            }
+            .line{
+                width: 140px/2/$rem;
+                position: relative;
+                @include retinabt(#666666);
+                height: 1px;
+            }
+        }
+        .textBox{
+            height: 80px/2/$rem;
+            margin-bottom: 20px/2/$rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items:center;
+            background: #27272a;
+            label{
+                font-size: 28px/2/$rem;
+                color: #999999;
+                padding: 0 20px;
+            }
+            input{
+                height: 80px/2/$rem;
+                border: none;
+                font-size: 28px/2/$rem;
+                color: #fff;
+                background: #27272a;
+            }
+            .codeText{
+                width: 250px/2/$rem;
+            }
+            .getCodeBtn{
+                height: 60px/2/$rem;
+                width: 190px/2/$rem;
+                background: #383838;
+                color: #999999 ;
+                border-radius: 4px/2/$rem;
+                font-size: 24px/2/$rem;
+                text-align: center;
+                line-height: 60px/2/$rem;
+            }
+            .active{
+                background: #1C9B4D;
+                color: #fff;
+            }
+        }
+        .blurBorder{
+            @include retinab(#3C3C3C,4px);
+        }
+        .focusBorder{
+            @include retinab(#1C9B4D,4px);
+        }
+        .confirmBtn{
+            margin-top: 40px/2/$rem;
+            height: 80px/2/$rem;
+            background: #383838;
+            color: #999999 ;
+            border-radius: 4px/2/$rem;
+            text-align: center;
+            line-height: 80px/2/$rem;
+            font-size: 30px/2/$rem;
+        }
+        .active{
+            background: #1C9B4D;
+            color: #fff;
+        }
+    }
+}

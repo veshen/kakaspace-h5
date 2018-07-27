@@ -1,0 +1,115 @@
+@import "../global/base";
+
+body{
+    background: url('https://resource.sa-green.cn/image/jpg/%E5%A1%AB%E5%86%99%E6%88%90%E5%8A%9F-squashed.png') no-repeat 0 0 #fdcfdf;
+    background-size: 100% auto;
+}
+
+.container{
+    padding: 0 30px/2/$rem 330px/2/$rem;
+    overflow: hidden;
+    .bdPic{
+        display: block;
+        width: 357px/2/$rem;
+        height: 393px/2/$rem;
+        margin: 70px/2/$rem auto 30px/2/$rem;
+    }
+    .title{
+        display: block;
+        width: 100%;
+    }
+    .result{
+        text-align: center;
+        padding-bottom: 55px/2/$rem;
+        padding-top: 265px/2/$rem;
+        img{
+            display: block;
+            width: 100px/2/$rem;
+            height: 100px/2/$rem;
+            margin: 0 auto 20px/2/$rem;
+        }
+        p{
+            font-size: 36px/2/$rem;
+            color: #FFFFFF;
+            margin-bottom: 40px/2/$rem;
+        }
+        h3{
+            font-size: 48px/2/$rem;
+            color: #FFFFFF;
+            margin-bottom: 20px/2/$rem;
+        }
+        span{
+            font-size: 24px/2/$rem;
+            color: #333333;
+        }
+    }
+    .content{
+        background: #fff;
+        padding: 0 30px/2/$rem 30px/2/$rem;
+
+        .ins{
+            display: flex;
+            height: 90px/2/$rem;
+            align-items: center;
+            p{
+                width: 150px/2/$rem;
+                font-size: 30px/2/$rem;
+                color: #333333;
+            }
+            .inp{
+                height: 90px/2/$rem;
+                @include retinabb(#E4E4E4);
+                position: relative;
+                flex-grow:1;
+                input{
+                    height: 80px/2/$rem;
+                    border: none;
+                    box-shadow: none;
+                }
+                input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+                    color:    #ccc;
+                    font-size: 30px/2/$rem;
+                    font-weight: 300;
+                }
+                input:-moz-placeholder, textarea:-moz-placeholder {
+                    color:    #ccc;
+                    font-size: 30px/2/$rem;
+                    font-weight: 300;
+                }
+                input::-moz-placeholder, textarea::-moz-placeholder {
+                    color:    #ccc;
+                    font-size: 30px/2/$rem;
+                    font-weight: 300;
+                }
+                input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+                    color:    #ccc;
+                    font-size: 30px/2/$rem;
+                    font-weight: 300;
+                }
+            }
+        }
+        .tips{
+            text-align: center;
+            font-size: 25px/2/$rem;
+            margin-top: 25px/2/$rem;
+            color: #666666;
+        }
+        .btn{
+            width: 620px/2/$rem;
+            height: 80px/2/$rem;
+            background: #FF82BA;
+            border-radius: 100px/2/$rem;
+            text-align: center;
+            line-height: 80px/2/$rem;
+            font-size: 34px/2/$rem;
+            margin: 25px/2/$rem auto 0;
+            color: #fff;
+        }
+    }
+    .footerPic{
+        display: block;
+        width: 270px/2/$rem;
+        height: 324px/2/$rem;
+        margin: 45px/2/$rem auto 0;
+    }
+}

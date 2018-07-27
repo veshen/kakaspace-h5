@@ -1,0 +1,378 @@
+@import "../global/base";
+
+body {
+    padding-bottom: 220px/2/$rem;
+    background: #f1f1f1;
+}
+.container{
+    padding-top: 220px/2/$rem;
+    background: url('https://resource.sa-green.cn/image/jpg/%E5%9B%BE%E5%B1%82%2011.png') no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    .tipsBox{
+        position: absolute;
+        top: 18px/2/$rem;
+        right: 60px/2/$rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            font-size: 24px/2/$rem;
+            color: #fff;
+            i{
+                margin-left: 2px/2/$rem;
+                position: relative;
+                top: -2px/2/$rem;
+            }
+        }
+    }
+    .vipInfo{
+        .topContent{
+            margin: 0 60px/2/$rem;
+            width: 630px/2/$rem;
+            height: 330px/2/$rem;
+            background: url('https://resource.sa-green.cn/image/jpg/card-%E7%A9%BA2.png') no-repeat;
+            background-size: 100%;
+            .userInfo{
+                padding: 98px/2/$rem 0 30px/2/$rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .imgBox{
+                    width: 74px/2/$rem;
+                    height: 74px/2/$rem;
+                    border-radius: 50%;
+                    margin-right: 10px/2/$rem;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .vipDetail{
+                    div{
+                        font-size: 24px/2/$rem;
+                        line-height: 24px/2/$rem;
+                        color: #FFFFFF;
+                        padding: 10px/2/$rem 0;
+                        img{
+                            width: 20px/2/$rem;
+                            height: 20px/2/$rem;
+                            margin-left: 6px/2/$rem;
+                        }
+                    }
+                    p{
+                        font-size: 20px/2/$rem;
+                        line-height: 20px/2/$rem;
+                        color: #666666;
+                    }
+                }
+            }
+            .content>div{
+                width: 50%;
+            }
+            .content{
+                display: flex;
+                justify-content: center;
+                div{
+                    .title{
+                        color: #999999;
+                        font-size: 30px/2/$rem;
+                        text-align: center;
+                    }
+                    .gold{
+                        color: #D8B579;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px/2/$rem;
+        padding-bottom: 50px/2/$rem;
+        .center-box{
+            margin: 0 15px/2/$rem;
+        }
+        div{
+            width: 200px/2/$rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            img{
+                display: block;
+                width: 64px/2/$rem;
+                height: 64px/2/$rem;
+                margin: 0 auto;
+            }
+            .title{
+                font-size: 24px/2/$rem;
+                color: #333333;
+                line-height: 24px/2/$rem;
+                padding: 20px/2/$rem 0 12px/2/$rem;
+            }
+            .subTitle{
+                font-size: 20px/2/$rem;
+                color: #999999;
+                line-height: 20px/2/$rem;
+            }
+        }
+    }
+    .vipRecharge{
+        .title{
+            font-size: 28px/2/$rem;
+            color: #B49957;
+            line-height: 28px/2/$rem;
+            text-align: center;
+            padding-bottom: 30px/2/$rem;
+        }
+        .vipRechargeContent{
+            margin: 0 60px/2/$rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            .vipRechargeItem{
+                width: 300px/2/$rem;
+                height: 190px/2/$rem;
+                margin-bottom: 30px/2/$rem;
+                background: #FFFFFF;
+                box-shadow: 0 0 4px/2/$rem 0 rgba(0,0,0,0.10);
+                border-radius: 8px/2/$rem;
+                text-align: center;
+                position: relative;
+                .saleTag{
+                    display: block;
+                    width: 55px/2/$rem;
+                    height: 30px/2/$rem;
+                    position: absolute;
+                    top: 0;
+                    right: 16px/2/$rem;
+                }
+                .selectedTag{
+                    display: none;
+                }
+                .vipRechargePrice{
+                    margin-bottom: 12px/2/$rem;
+                    .nowPrice{
+                        font-size: 36px/2/$rem;
+                        line-height: 36px/2/$rem;
+                        color: #FF4E09;
+                        i{
+                            font-size: 30px/2/$rem;
+                            line-height: 30px/2/$rem;
+                            color: #FF4E09;
+                            font-style: normal;
+                        }
+                    }
+                    .oldPrice{
+                        font-size: 30px/2/$rem;
+                        color: #999999;
+                        i{
+                            font-size: 24px/2/$rem;
+                            line-height: 24px/2/$rem;
+                            color: #999999;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .vipRechargeLength{
+                    font-size: 42px/2/$rem;
+                    line-height: 42px/2/$rem;
+                    color: #333333;
+                    padding-top: 34px/2/$rem;
+                    margin-bottom: 12px/2/$rem;
+                    .saleText{
+                        display: inline-block;
+                        vertical-align: super;
+                        font-size: 20px/2/$rem;
+                        color: #FFFFFF;
+                        background: #FF4E09;
+                        width: 77px/2/$rem;
+                        height: 30px/2/$rem;
+                        text-align: center;
+                        line-height: 30px/2/$rem;
+                        margin-left: 4px/2/$rem;
+                        position: relative;
+                        border-radius: 0 4px/2/$rem 4px/2/$rem 0;
+                        #triangle-topleft {
+                            width: 0;
+                            height: 0;
+                            border-top: 8px/2/$rem solid #FF4E09;
+                            border-right: 8px/2/$rem solid transparent;
+                        }
+                    }
+                }
+                .vipRechargeSave{
+                    font-size: 24px/2/$rem;
+                    color: #999999;
+                    span{
+                        color: #D8B579;
+                    }
+                }
+            }
+            .cur{
+                background:url('https://resource.sa-green.cn/image/jpg/%E9%92%A9.png') no-repeat top right #181818;
+                background-size: 45px/2/$rem;
+                .saleTag{
+                    display: none;
+                }
+                .selectedTag{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                .vipRechargePrice{
+                    .nowPrice{
+                        color: #DAB655;
+                        i{
+                            color: #DAB655;
+                        }
+                    }
+                    .oldPrice{
+                        color: #9C8957;
+                        i{
+                            color: #9C8957;
+                        }
+                    }
+                }
+                .vipRechargeLength{
+                    color: #DAB655;
+                }
+                .vipRechargeSave{
+                    span{
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+    .payBox{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 -1px/2/$rem 4px/2/$rem 0 rgba(0,0,0,0.20);
+        .content{
+            margin: 0 60px/2/$rem;
+            .balanceDeduction{
+                height: 89px/2/$rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                @include retinabb(#e4e4e4);
+                p{
+                    font-size: 30px/2/$rem;
+                    color: #333333;
+                }
+                #balanceBtn{
+                    width: 78px/2/$rem;
+                    height: 48px/2/$rem;
+                    border-radius: 24px/2/$rem;
+                    .dot{
+                        width: 42px/2/$rem;
+                        height: 42px/2/$rem;
+                        border-radius: 50%;
+                        margin-top: 3px/2/$rem;
+                        background: #FFFFFF;
+                        border: 0 solid rgba(0,0,0,0.10);
+                        box-shadow: 0 3px 1px 0 rgba(0,0,0,0.05), 0 2px 2px 0 rgba(0,0,0,0.10), 0 3px 3px 0 rgba(0,0,0,0.05);
+                        transition: margin-left .3s;
+                    }
+                }
+                .on{
+                    background: #1C9B4D;
+                    .dot{
+                        margin-left: 33px/2/$rem;
+                    }
+                }
+                .off{
+                    background: #ccc;
+                    .dot{
+                        margin-left: 3px/2/$rem;
+                    }
+                }
+            }
+            .payBtnBox{
+                padding: 30px/2/$rem 0;
+                div{
+                    width: 630px/2/$rem;
+                    height: 88px/2/$rem;
+                    border-radius: 44px/2/$rem;
+                    text-align: center;
+                    line-height: 88px/2/$rem;
+                    background: #1C9B4D;
+                    font-size: 34px/2/$rem;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+#payBox{
+    animation-duration : .3s ;
+}
+.DiaLog{
+    width: 520px/2/$rem;
+    height: 486px/2/$rem;
+    background: #fff;
+    border-radius: 8px/2/$rem;
+    text-align: center;
+    h3{
+        padding-top: 40px/2/$rem;
+        margin-bottom: 20px/2/$rem;
+        font-size: 48px/2/$rem;
+        color: #333333;
+    }
+    p{
+        font-size: 36px/2/$rem;
+        color: #666666;
+    }
+    img{
+        display: block;
+        width: 310px/2/$rem;
+        height: 230px/2/$rem;
+        margin: 0 auto;
+    }
+    a{
+        display: inline-block;
+        width: 390px/2/$rem;
+        height: 90px/2/$rem;
+        text-align: center;
+        line-height: 90px/2/$rem;
+        font-size: 36px/2/$rem;
+        background: #1C9B4D;
+        border-radius: 100px;
+        color: #fff;
+        position: absolute;
+        bottom: -45px/2/$rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.VipRuler{
+    width: 520px/2/$rem;
+    border-radius: 20px/2/$rem;
+    background: #fff;
+    overflow: hidden;
+    .title{
+        height: 88px/2/$rem;
+        background: #1C9B4D;
+        text-align: center;
+        line-height: 88px/2/$rem;
+        font-size: 34px/2/$rem;
+        color: #fff;
+    }
+    .content{
+        padding: 20px/2/$rem 30px/2/$rem 30px/2/$rem;
+        font-size: 26px/2/$rem;
+        line-height: 42px/2/$rem;
+        color: #333333;
+    }
+}

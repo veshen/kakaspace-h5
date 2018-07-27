@@ -1,0 +1,451 @@
+@import "../global/base";
+html{
+
+}
+body{
+  background: #001d31;
+}
+
+.plan_index{
+}
+
+.plan_top{
+  position: relative;
+  .plan_top_bg{
+    img{
+      width: 100%;
+      float: left;
+    }
+  }
+  .plan_top_txt{
+    position: absolute;
+    top:60px/$rem;
+    text-align: center;
+    img{
+      width: 85%;
+    }
+  }
+}
+
+.plan_tip{
+  position: absolute;
+  top:325px/$rem;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 15px/$rem;
+  .icon-down-fill{
+    opacity: 0.6;
+    font-size: 10px/$rem;
+  }
+  .plan_tip_txt{
+    opacity: 0.6;
+    font-size: 13px/$rem;
+  }
+
+  .plan_tip_scroll{
+    padding-top: 4px/$rem;
+    margin: 0 auto;
+    width: 200px/$rem;
+    height: 24px/$rem;
+    line-height: 24px/$rem;
+    border-radius:20px/$rem;
+    position: relative;
+    top:-10px/$rem;
+    background: #05496b;
+    .scroll_txt_list{
+        height: 18px/$rem;
+        line-height: 18px/$rem;
+        color: #05496b;
+    }
+    .scroll_txt_list em i{
+      color: #87d4e7;
+    }
+  }
+
+}
+
+.plan_enter{
+  position: absolute;
+  top:360px/$rem;
+  z-index: 101;
+  width: 100%;
+  padding-bottom: 15px/$rem;
+  .plan_enter_title{
+    margin: 0 15px/$rem;
+    font-size: 12px/$rem;
+    color: #666;
+  }
+  .plan_enter_btn_box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .plan_enter_btn_center_bottom{
+      text-align: center;
+    }
+    &:nth-child(2){
+      .plan_enter_btn{
+          .plan_enter_tag{
+            position: absolute;
+            left: 16px/4/$rem;
+            top: -10px/4/$rem;
+            img{
+              width: 112px/4/$rem;
+              height: 66px/4/$rem;
+            }
+          }
+            margin-left: 0;
+            margin-right: 0;
+        &:nth-child(1){
+            background: linear-gradient(-90deg,#3b9c05 20%,#6ec008 70%,#b3e60c );
+            .plan_enter_btn_center_bottom{
+              color: #3b9c05;
+            }
+        }
+        &:nth-child(2) {
+            background: linear-gradient(-90deg,#3b9c05 20%,#6ec008 70%,#b3e60c );
+            .plan_enter_btn_center_bottom{
+              color: #3b9c05;
+            }
+        }
+        &:nth-child(3){
+            background: linear-gradient(-90deg,#25C3DC 20%,#6FE4DB  70%,#5CEBC7 );
+            .plan_enter_btn_center_bottom{
+              color: #47D1DB;
+            }
+        }
+        &:nth-child(4) {
+            background: linear-gradient(-90deg,#ff5858 20%,#f09819 );
+            .plan_enter_btn_center_bottom{
+              color: #fe5d53;
+            }
+        }
+        &:nth-child(2n){
+        //   margin-left: 0;
+        //   margin-right: 0;
+        }
+
+      }
+    }
+    .plan_enter_btn1, .plan_enter_btn2{
+        background: linear-gradient(-90deg,#25C3DC 20%,#6FE4DB  70%,#5CEBC7 ) !important;
+        .plan_enter_btn_center_bottom{
+          color: #47D1DB !important;
+        }
+    }
+    .plan_enter_btn3, .plan_enter_btn4{
+        background: linear-gradient(-90deg,#3b9c05 20%,#6ec008 70%,#b3e60c ) !important;
+        .plan_enter_btn_center_bottom{
+          color: #3b9c05 !important;
+        }
+    }
+    .plan_enter_btn1, .plan_enter_btn3{
+          margin-left: 10px/$rem !important;
+          margin-right: 10px/$rem !important;
+    }
+    .plan_enter_btn2, .plan_enter_btn4{
+          margin-left: 0;
+          margin-right: 10px/$rem !important;
+    }
+    .plan_fullwidth{
+        margin:0 10px/$rem 6px/$rem 10px/$rem;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .plan_normal{
+        margin-left: 10px/$rem;
+        margin-right: 10px/$rem;
+        ul{
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap:wrap;
+            -webkit-flex-wrap:wrap;
+            li{
+                box-flex:0;
+                flex:0 0 48.5%;
+                -webkit-flex:0 0 48.5%;
+                padding-bottom: 8px/$rem;
+                .newTag{
+                    width: 30px/$rem;
+                    position: absolute;
+                    margin-top: -1px/$rem;
+                    margin-left: 5px/$rem;
+                }
+            }
+        }
+        ul li:nth-child(2n-1){
+            margin-right: 5px/$rem;
+        }
+        ul li:nth-child(2n){
+            margin-left: 5px/$rem;
+        }
+    }
+
+  }
+  .plan_enter_btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 3px/$rem;
+    height: 90px/$rem;
+    margin: 8px/$rem 15px/$rem;
+    flex: 1 1 162.5px/$rem;
+    margin-bottom: 4px/$rem !important;
+    /*
+    &:nth-child(1),&:nth-child(2){
+      margin-right: 0;
+      background: linear-gradient(-90deg,#3b9c05 20%,#6ec008 70%,#b3e60c );
+      .plan_enter_btn_center_bottom{
+        color: #3b9c05;
+      }
+    }
+    &:nth-child(3),&:nth-child(4){
+      margin-right: 0;
+      background: linear-gradient(-90deg,#ff5858 20%,#f09819 );
+      .plan_enter_btn_center_bottom{
+        color: #fe5d53;
+      }
+    }
+    &:nth-child(5){
+      margin-right: 0;
+      background: linear-gradient(-90deg,#25c3dc 20%,#6ae8df );
+      .plan_enter_btn_center_bottom{
+        color: #25c3dc;
+      }
+    }
+    &:nth-child(6){
+      background: #2c2c2c;
+      margin-right: 0;
+      color: #666;
+      .plan_enter_btn_center_bottom{
+        color: #2c2c2c;
+      }
+    }
+    */
+  }
+  .plan_enter_btn_left{
+    font-size: 91px/$rem;
+    font-weight: 100;
+  }
+  .plan_enter_btn_center{
+    .plan_enter_btn_center_top{
+      margin-bottom: 4px/$rem;
+      font-size: 14px/$rem;
+    }
+    .plan_enter_btn_center_bottom{
+      border-radius: 2px;
+      background: #fff;
+      padding: 3px/$rem;
+      font-size: 10px/$rem;
+      font-weight: 400;
+      position: relative;
+      right: -2px/$rem;
+    }
+    &.empty{
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      img{
+        width: 110px/$rem;
+      }
+    }
+  }
+  .plan_enter_btn_right{
+    height: 100%;
+    margin-left: 10px/$rem;
+    font-size: 15px/$rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .plan_enter_tip{
+    text-align: center;
+    margin: 15px/$rem 0;
+    color: #fff;
+    font-size: 12px/$rem;
+  }
+  .plan_enter_rule{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    z-index: 102;
+    span{
+      padding: 4px/$rem;
+      border-radius: 3px;
+      font-size: 12px/$rem;
+      color: #666;
+      border: 1px solid #666;
+    }
+  }
+}
+
+.plan_history{
+  position: relative;
+  top:80px/$rem;
+  z-index: 100;
+  margin: 0 10px/$rem;
+  padding-bottom: 15px/$rem;
+  .plan_history_head{
+    color: #3b9c05;
+    font-size: 28px/2/$rem;
+    letter-spacing: 1px;
+    i{
+      margin-right: 2px/$rem;
+    }
+  }
+
+  .plan_history_list{
+    position: relative;
+    transition:height 0.3s;
+    height: 0;
+    overflow: hidden;
+    .plan_history_list_line{
+      pointer-events: none;
+      position: absolute;
+      width: 1px;
+      background: #333;
+      z-index: 20;
+    }
+
+  }
+
+  .plan_history_item{
+    display: flex;
+    flex-direction: column;
+    .plan_history_item_head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px/$rem 0;
+    }
+    .plan_history_item_head_left{
+      display: flex;
+      align-items: center;
+      color: #999;
+      font-size: 14px/$rem;
+    }
+    .plan_history_item_point{
+      position: relative;
+      z-index: 50;
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      background: #3b9c05;
+      border-radius: 100%;
+      margin-right: 7px/$rem;
+    }
+
+    .plan_history_item_head_right{
+      color: #3b9c05;
+      font-size: 14px/$rem;
+      &.gray{
+        color: #999;
+      }
+    }
+    .plan_history_item_body{
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #363636;
+      border-left: 5px/$rem solid #3b9c05;
+      border-radius: 3px/$rem;
+      height: 45px/$rem;
+      margin-left: 10px/$rem;
+    }
+    .plan_history_item_left{
+      color: #fff;
+      font-size: 15px/$rem;
+      text-indent: 1em;
+      &.gray{
+        color: #999;
+      }
+    }
+    .plan_history_item_right i{
+      color: #9a9a9a;
+      font-size: 18px/$rem;
+      font-weight: bold;
+      margin-right: 10px/$rem;
+      &.icon-complete{
+        color: #3b9c05;
+        position: absolute;
+        right: -18px/$rem;
+        top:-18px/$rem;
+        font-size: 55px/$rem;
+        font-weight: 100;
+      }
+    }
+
+  }
+
+  .plan_history_btn{
+    width: 100px/$rem;
+    height: 30px/$rem;
+    background: #242424;
+    color: #999;
+    font-size: 12px/$rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px/$rem auto 0;
+    border-radius: 3px;
+  }
+
+}
+
+.plan_rule{
+  width: 530px/2/$rem;
+  background: #fff;
+  border-radius: 3px;
+  .plan_rule_head{
+    height: 100px/2/$rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b9c05;
+    color: #fff;
+    font-size: 18px/$rem;
+  }
+  .plan_rule_body{
+    padding: 15px/$rem 10px/$rem;
+  }
+  .plan_rule_item{
+    display: flex;
+    font-size: 13px/$rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px/$rem;
+  }
+  .plan_rule_foot{
+    margin: 15px/$rem 10px/$rem;
+    display: flex;
+    font-size: 13px/$rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px/$rem;
+  }
+}
+.summer_box{
+    margin-left: 10px/$rem;
+    margin-right: 10px/$rem;
+}
+.newIcon{
+    position: absolute;
+    left: 5px/$rem;
+    top: -2px/$rem;
+    img{
+        width: 25px/$rem;
+    }
+}

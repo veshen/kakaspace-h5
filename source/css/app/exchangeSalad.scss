@@ -1,0 +1,141 @@
+@import "../global/base";
+body {
+    background: rgb(236,236,236);
+}
+.container{
+    header{
+        padding: 0 30px/2/$rem 0;
+        height: 250px/2/$rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        @include retinabb(#E4E4E4);
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                position: absolute;
+                top: 25px/2/$rem;
+                right: 20px/2/$rem;
+            }
+            img{
+                width: 207px/2/$rem;
+                height: 171px/2/$rem;
+                display: block;
+                margin-right: 30px/2/$rem;
+            }
+            .box2{
+                .title{
+                    font-size: 32px/2/$rem;
+                    color: #35452B;
+                    margin-bottom: 32px/2/$rem;
+                }
+                .count{
+                    text-align: center;
+                    font-size: 80px/2/$rem;
+                    color: #7DBE55;
+                    span{
+                        font-size: 30px/2/$rem;
+                    }
+                }
+            }
+        }
+
+    }
+    section{
+        background: #fff;
+        padding: 20px/2/$rem 30px/2/$rem 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        box-shadow: 0 0 10px/2/$rem 0 rgba(0,0,0,0.20);
+        .item{
+            width: 210px/2/$rem;
+            height: 200px/2/$rem;
+            box-sizing: border-box;
+            border: 1px solid #E4E4E4;
+            margin-bottom: 30px/2/$rem;
+            p{
+                padding: 20px/2/$rem 0 10px/2/$rem;
+                text-align: center;
+                font-size: 20px/2/$rem;
+                color: #333333;
+            }
+            img{
+                display: block;
+                width: 200px/2/$rem;
+                height: 130px/2/$rem;
+                margin: 0 auto;
+            }
+        }
+        .active{
+            border: 1px solid #1C9B4D;
+            background: url('https://resource.sa-green.cn/image/jpg/%E9%80%89%E4%B8%AD.png') no-repeat right top #fff;
+            background-size: 35px/2/$rem;
+        }
+    }
+    .tips{
+
+        height: 115px/2/$rem;
+    }
+    .tips{
+        padding-top: 30px/2/$rem;
+        img{
+            display: block;
+            width: 207px/2/$rem;
+            height: 28px/2/$rem;
+            margin: 0 auto;
+        }
+    }
+    footer{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        height: 130px/2/$rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 0 10px/2/$rem 0 rgba(0,0,0,0.20);
+        div{
+            width: 690px/2/$rem;
+            height: 90px/2/$rem;
+            line-height: 90px/2/$rem;
+            text-align: center;
+            font-size: 34px/2/$rem;
+            color: #FFFFFF;
+            border-radius: 4px/2/$rem;
+        }
+        .pink{
+            background: #FF7F88;
+            margin-right: 30px/2/$rem;
+        }
+        .green{
+            background: $sagreen;
+        }
+    }
+    .exTips{
+        background: #FFF2D2;
+        height: 72px/2/$rem;
+        text-align: center;
+        font-size: 30px/2/$rem;
+        color: #FF8A00;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 36px/2/$rem;
+            height: 36px/2/$rem;
+            text-align: center;
+            line-height: 36px/2/$rem;
+            position: relative;
+            @include retinab(#FF8A00,50%);
+            margin-right: 10px/2/$rem;
+        }
+    }
+}

@@ -1,0 +1,356 @@
+@import "../global/base";
+@import "../plugin/date.get.css";
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main{
+  flex: 1 1 auto;
+  background: #111111;
+  min-height: 100%;
+  margin-bottom: 60px/$rem;;
+}
+.dateGet_head_left{
+  .icon-down{
+    display: inline-block;
+    transform: rotate(90deg);
+    pointer-events: none;
+  }
+}
+
+.dateGet_head_right{
+  .icon-down{
+    display: inline-block;
+    transform: rotate(-90deg);
+    pointer-events: none;
+  }
+}
+.date_slide_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon-down{
+    margin-top: 2px/$rem;
+    padding-top: 5px/$rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0 0 30px/$rem 30px/$rem;
+    background: #262626;
+    width: 60px/$rem;
+    height: 25px/$rem;
+    color: #7c7c7c;
+    font-size: 20px/$rem;
+    &::before{
+      transition:0.3s transform;
+
+    }
+  }
+  .rotate{
+    &::before{
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
+}
+.date_tips{
+  color: #3b9c05;
+  font-size: 12px/$rem;
+  text-align: center;
+  margin: 10px/$rem 0 0;
+}
+.plan_list{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+  .plan_list_item{
+    margin: 10px/$rem 16px/$rem 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    &:last-child{
+      margin-bottom: 10px/$rem;
+    }
+  }
+  .plan_list_item_head{
+    width: 100%;
+    height: 34px/$rem;
+    background: #f6f6f6;
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .plan_list_item_head_left{
+      text-indent: 10px/$rem;
+      font-size: 15px/$rem;
+      color: #666;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      span{
+        position: relative;
+        z-index: 100;
+      }
+      .dateBox{
+          margin-left: -0.3rem;
+      }
+      .plan_list_item_head_item_tag{
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        border-radius: 3px 0 0 0;
+        background: #3b9c05;
+        color: #fff;
+        height: 100%;
+        margin-right: 25px/$rem;
+        em{
+          position: absolute;
+          top:5px/$rem;
+          right: -12px/$rem;
+          background: #3b9c05;
+          display: inline;
+          height: 24.2px/$rem;
+          width: 24.2px/$rem;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .plan_list_item_head_right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #999;
+      border-radius: 0 3px 0 0;
+    }
+    .plan_list_item_head_item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px/2/$rem;
+      width: 78px/2/$rem;
+      margin-right: 5px/$rem;
+      font-size: 11px/$rem;
+      border: 1px solid #999;
+      border-radius: 2px/$rem;
+      background: rgba(255,255,255,0);
+      transition:all 0.3s;
+      &.active{
+        border: 1px solid #3b9c05;
+        background: #3b9c05;
+        color: #fff;
+      }
+      span{
+        margin: 0 5px/$rem;
+        position: relative;
+        top:1px/$rem;
+      }
+    }
+  }
+  .plan_list_item_body{
+    background: #fff;
+    padding: 10px/$rem 16px/$rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .plan_list_item_img{
+      img{
+        width: 45px/$rem;
+        border-radius: 3px;
+      }
+    }
+    .plan_list_item_info{
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px/$rem;
+      .plan_list_item_info_name{
+        margin-bottom: 8px/$rem;
+        font-size: 15px/$rem;
+        color: #333;
+      }
+      .plan_list_item_info_description{
+        font-size: 12px/$rem;
+        color: #999;
+      }
+    }
+    .plan_list_item_price{
+      font-size: 15px/$rem;
+      color: #999;
+      em{
+        font-size: 9px/$rem;
+      }
+    }
+  }
+  .plan_list_item_foot{
+    background: #fff;
+    border-radius:0 0 3px 3px;
+    padding-left: 70px/$rem;
+    .plan_list_item_foot_address{
+      word-break: break-all;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px/$rem 0;
+      &:after{
+        position: absolute;
+        content: '';
+        left: -50%;
+        top:-50%;
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        border-top: 1px solid #f1f1f1;
+      }
+    }
+    .plan_list_item_foot_address_left{
+      flex: 1 1 auto;
+      color: #666;
+      font-size: 12px/$rem;
+      margin-right: 10px/$rem;
+      p{
+        font-size: 15px/$rem;
+        color: #333;
+      }
+      .plan_list_item_foot_address_left_top{
+        margin-bottom: 8px;
+        height: 10px/$rem;
+        display: flex;
+        align-items: center;
+        span{
+          margin-right: 5px/$rem;
+        }
+      }
+      .plan_list_item_tag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #3b9c05;
+        color: #3b9c05;
+        height: 14px;
+        line-height: 14px;
+        padding: 0 5px/$rem;
+        border-radius: 10px;
+        font-size: 9px/$rem;
+        em{
+          position: relative;
+          top:1px;
+        }
+      }
+
+      .plan_list_item_foot_address_left_bottom{
+        display: flex;
+        align-items:center;
+      }
+      .plan_list_item_area{
+        display: inline-block;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin-right: 5px/$rem;
+      }
+      .plan_list_item_address{
+        flex: 1 1 auto;
+        display: inline-block;
+        line-height: 16px/$rem;
+      }
+    }
+    .plan_list_item_foot_address_right{
+      margin-right: 10px/$rem;
+      height: 20px;
+      .icon-add{
+        border: 1px solid #333;
+        border-radius: 100%;
+        padding: 5px;
+        font-size: 11px;
+      }
+    }
+    .icon-down{
+      display: inline-block;
+      transform: rotate(-90deg);
+      color: #999;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.plan_btn{
+  background: #fff;
+  position: fixed;
+  z-index: 1002;
+  width: 100%;
+  bottom: 0;
+  height: 60px/$rem;
+  :before{
+    @extend %halfBorder;
+    border-top:1px solid #e1e1e1;
+  }
+  .plan_btn_inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 16px/$rem;
+  }
+  .plan_btn_left{
+    flex: 1 1 auto;
+    font-size: 13px/$rem;
+    span{
+      color: #fc5c5c;
+      font-size: 20px/$rem;
+      em{
+        font-size: 12px/$rem;
+        margin-right: 1px/$rem;
+      }
+    }
+    span:last-child{
+      margin-left: 2px/$rem;
+      color: #999;
+      i{
+        font-size: 10px/$rem;
+        font-style: normal;
+      }
+      del{
+      }
+    }
+  }
+  .plan_btn_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: #fff;
+    background: #3b9c05;
+    width: 87px/$rem;
+    height: 45px/$rem;
+    font-size: 15px/$rem;
+  }
+}
+.dialogpop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1003;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+.dialogpop img{
+    margin: 0 auto;
+    display: block;
+}
+.dialogpop img:nth-child(1){
+    margin-top: 131px/$rem;
+    width: 327px/$rem;
+}
+.dialogpop img:nth-child(2){
+    margin-top: 131px/$rem;
+    width: 150px/$rem;
+}
+.price_y{
+    font-size: 12px/$rem;
+}

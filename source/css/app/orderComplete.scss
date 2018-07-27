@@ -1,0 +1,216 @@
+@import "../global/base";
+
+html{
+
+}
+body{
+  background: #eee;
+}
+
+.OCI{
+  background: #fff;
+  position: relative;
+  height: 135px/2/$rem;
+  display: flex;
+  align-items: center;
+  padding: 5px/$rem 15px/$rem;
+  &:before{
+    @extend %halfBorder;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .OCI_left{
+    margin-right: 10px/$rem;
+    .icon-choose{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      color: #fff;
+      background: #3b9c05;
+      font-size: 30px/$rem;
+    }
+  }
+  .OCI_right{
+    .OCI_right_top{
+      font-size: 15px/$rem;
+      margin-bottom: 10px/$rem;
+    }
+    .OCI_right_bottom{
+      color: #a1a1a1;
+      font-size: 12px/$rem;
+      a{
+        margin: 0 5px/$rem;
+        color: #3b9c05;
+      }
+    }
+  }
+}
+
+.OCC{
+  background: #fff;
+  padding: 15px/$rem 0;
+  .OCC_img{
+    text-align: center;
+    padding-bottom: 15px/$rem;
+    img{
+      width: 150px/$rem;
+    }
+  }
+  .OCC_txt{
+    text-align: center;
+    font-size: 12px/$rem;
+    line-height: 1.5;
+    span{
+      color: #999;
+    }
+  }
+  .order_top_b{
+      background: #fff;
+      position: relative;
+      @include retinabb(#E1E1E1);
+      text-align: center;
+      padding-bottom: 30px/2/$rem;
+      overflow: hidden;
+      margin-bottom: 20px/2/$rem;
+      img{
+          display: block;
+          width: 348px/2/$rem;
+          height: 312px/2/$rem;
+          margin: 39px/2/$rem auto 27px/2/$rem;
+      }
+      .title{
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px/2/$rem;
+          p{
+              font-size: 28px/2/$rem;
+              color: #09a58d;
+              line-height: 28px/2/$rem;
+              margin-bottom: 12px/2/$rem;
+          }
+          span{
+              font-size: 24px/2/$rem;
+              color: #999999;
+              line-height: 24px/2/$rem;
+          }
+
+      }
+      a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 220px/2/$rem;
+          height: 60px/2/$rem;
+          font-size: 22px/2/$rem;
+          background: #f9a0c2;
+          color: #fff;
+          border-radius: 6px/2/$rem;
+          margin: 0 auto;
+          line-height: 60px/2/$rem;
+          div{
+              margin-left: 6px/2/$rem;
+          }
+      }
+
+  }
+}
+
+.OCS{
+  .OCS_head{
+    color: #3b9c05;
+    font-size: 12px/$rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px/$rem;
+    margin-bottom: 10px/$rem;
+    em{
+      display: inline-block;
+      width: 6px/$rem;
+      height: 2px/$rem;
+      background: #3b9c05;
+    }
+  }
+  .OCS_body{
+    margin: 0 55px/2/$rem;
+    img{
+      max-width:100%;
+    }
+  }
+  .OCS_how{
+    color: #3b9c05;
+    text-align: center;
+    font-size: 14px/$rem;
+    p{
+      margin: 30px/$rem;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 6px solid #fff;
+    border-bottom: 5px solid transparent;
+}
+
+.float_red{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 250px/$rem;
+    margin-right: 30px/$rem;
+    width: 48px/$rem;
+    z-index: 1;
+    img{
+        width: 100%;
+    }
+}
+.red_toast{
+    .red_bg{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        z-index: 99;
+    }
+    .content{
+        position: absolute;
+        width: 542px/2/$rem;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        z-index: 100;
+        img{
+            display: block;
+            width: 542px/2/$rem;
+            height: 562px/2/$rem;
+            margin: 0 0 20px/2/$rem 0;
+        }
+        .close_word{
+            text-align: center;
+            font-size: 24px/2/$rem;
+            color: #999;
+        }
+    }
+    .close{
+        position: absolute;
+        right: 50px/2/$rem;
+        top : 50px/2/$rem;
+        color: #ccc;
+        z-index: 100;
+        i{
+            display: inline-block;
+            border:2px solid #ccc;
+            border-radius: 100%;
+            padding: 5px/$rem;
+        }
+
+    }
+}

@@ -1,0 +1,97 @@
+@import "../global/base";
+body{
+    background: #f3f4f4;
+}
+
+.container{
+
+    .banner{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .content{
+        padding: 0 20px/2/$rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item-box{
+            margin-bottom: 20px/2/$rem;
+            width: 345px/2/$rem;
+            background: #fff;
+            .item-pic{
+                height: 264px/2/$rem;
+                position: relative;
+                margin-bottom: 42px/2/$rem;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                .price-info-box{
+                  width: 100%;
+                  height: 48px/2/$rem;
+                  background: rgba(17, 17, 17, 0.85);
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  display: flex;
+                  justify-content: flex-start;
+                  p{
+                      color: #1C9B4D;
+                      font-size: 36px/2/$rem;
+                      line-height: 48px/2/$rem;
+                      margin-left: 22px/2/$rem;
+                      margin-right: 12px/2/$rem;
+                      em{
+                          font-size: 22px/2/$rem;
+                      }
+                  }
+                  span{
+                      font-size: 20px/2/$rem;
+                      line-height: 56px/2/$rem;
+                      color: #c4c3c3;
+                  }
+                }
+            }
+            .item-info{
+                text-align: center;
+                h3{
+                    font-size: 22px/2/$rem;
+                    line-height: 22px/2/$rem;
+                    margin-bottom: 20px/2/$rem;
+                    color: #000000;
+                    font-weight: 1000;
+                }
+                .item-sub-title{
+                  font-size: 26px/2/$rem;
+                  line-height: 26px/2/$rem;
+                  margin-bottom: 20px/2/$rem;
+                  color: #1a1a1a;
+                }
+                .item-disc{
+                  font-size: 20px/2/$rem;
+                  line-height: 20px/2/$rem;
+                  margin-bottom: 42px/2/$rem;
+                  color: #888888;
+                }
+            }
+            .item-btn{
+              height: 68px/2/$rem;
+              background: #09b84f;
+              color: #fff;
+              text-align: center;
+              font-size: 24px/2/$rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .icon-arrow{
+              margin-left: 12px/2/$rem;
+              font-size: 14px/2/$rem;
+            }
+        }
+    }
+
+}

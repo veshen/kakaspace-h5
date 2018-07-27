@@ -1,0 +1,49 @@
+@import "../global/base";
+body{
+    padding-bottom: 220px/2/$rem;
+    background: url('https://resource.sa-green.cn/image/jpg/Group-89.jpg') repeat-y 0 0 #000;
+    background-size:100% auto;
+}
+.container{
+    background: url('https://resource.sa-green.cn/image/jpg/Group%206.png') no-repeat 0 0;
+    background-size:230px/2/$rem 230px/2/$rem;
+    padding-top: 29px/2/$rem;
+}
+.logo{
+    display: block;
+    width: 269px/2/$rem;
+    height: 50px/2/$rem;
+    margin: 0 auto 30px/2/$rem;
+}
+.get-box{
+    background: url('https://resource.sa-green.cn/image/jpgs/Group%2071.png') no-repeat 0 0;
+    background-size: 100%;
+    width: 690px/2/$rem;
+    height: 777px/2/$rem;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 60px/2/$rem;
+}
+.getCouponBtn{
+    width: 590px/2/$rem;
+    height: 100px/2/$rem;
+    position: absolute;
+    top: 635px/2/$rem;
+    left: 50px/2/$rem;
+}
+.title-img{
+    display: block;
+    margin-left: 30px/2/$rem;
+    width: 178px/2/$rem;
+    height: 65px/2/$rem;
+    margin-bottom: 21px/2/$rem;
+}
+.ruler-list{
+    margin: 0 30px/2/$rem;
+}
+.ruler-list li{
+    font-size: 22px/2/$rem;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 40px/2/$rem;
+}

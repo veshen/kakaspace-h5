@@ -1,0 +1,115 @@
+@import "../global/base";
+
+html,body{
+  height: 100%;
+}
+
+.newYear2017receive{
+  min-height: 100%;
+  background: url('http://resource.sa-green.cn/image/newyear2017/bg%20%283%29.png') repeat;
+  background-size: 5% 5%;
+  display: flex;
+  display: -webkit-flex;
+  .newYear2017receive_inner{
+    flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    margin: 30px/$rem;
+    border: 1px solid #e3b17e;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .newYear2017receive_title{
+    font-size: 26px/$rem;
+    color: #ecbc8c;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  .newYear2017receive_inner_icon{
+    position: absolute;
+    display: inline-block;
+    width: 10px/$rem;
+    height: 10px/$rem;
+    background: #e3b17e;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    &.topLeft{
+      left: -5px/$rem;
+      top:-5px/$rem;
+    }
+    &.topRight{
+      right: -5px/$rem;
+      top:-5px/$rem;
+    }
+    &.bottomLeft{
+      left: -5px/$rem;
+      bottom:-5px/$rem;
+    }
+    &.bottomRight{
+      right: -5px/$rem;
+      bottom:-5px/$rem;
+    }
+  }
+  .newYear2017receive_img{
+    text-align: center;
+    &.logo{
+      margin-top: 60px;
+      img{
+        width: 90px/$rem;
+      }
+    }
+  }
+  .newYear2017receive_foot_img{
+    text-align: center;
+    padding-bottom: 20px;
+    img{
+      width: 190px/$rem;
+    }
+  }
+  .newYear2017receive_box{
+    text-align: center;
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    img{
+      margin: 50px 1rem;
+    }
+  }
+  .newYear2017receive_btn{
+    background: #ecbc8c;
+    color: #9c2d33;
+    margin: 50px 1rem 10px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    box-shadow: 0 3px 0 #6f1e1e;
+    font-weight: bold;
+    &.two{
+    margin: 10px 1rem;
+    background:#fac127;
+    box-shadow: 0 3px 0 #5f3304;
+    }
+    a{
+      color: #9c2d33;
+    }
+    .icon-coin{
+      position: relative;
+      top:-2px
+    }
+  }
+}
+
+.newYear2017receive_bg{
+  position: fixed;
+  left: 0;
+  top:0;
+  height: 100%;
+  img{
+    width: 100%;
+  }
+}

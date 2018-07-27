@@ -1,0 +1,216 @@
+@import "../global/base";
+html{
+    // height: 100%;
+}
+body {
+    background: #f1f1f1;
+    // height: 100%;
+}
+.main{
+    height: 100%;
+}
+.search_input{
+    .sear_t{
+        display: flex;
+        background: #fff;
+        align-items: center;
+        padding: 10px/$rem 15px/$rem;
+
+        .add_name{
+            font-size: 14px/$rem;
+            color: #333;
+            margin-right: 10px/$rem;
+        }
+        .sear_r{
+            background: #e3e3e3;
+            box-flex:1;
+            flex:1 1 auto;
+            height: 30px/$rem;
+            border-radius: 3px/$rem;
+            display: flex;
+            font-size: 14px/$rem;
+            align-items: center;
+            .icon-search{
+                margin: 0 0 0 10px/$rem;
+                color: #ccc;
+            }
+            .s_in{
+                width: 100%;
+                background: #e3e3e3;
+                color: #333;
+                border: 0;
+                margin:0 10px/$rem;
+                font-size: 13px/$rem;
+            }
+        }
+    }
+    .sear_list{
+        background: #fff;
+        div{
+            position: relative;
+            padding: 15px/$rem 15px/$rem;
+            color: #666;
+            font-size: 14px/$rem;
+        }
+        div:before{
+            content: '';
+           pointer-events:none;
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           pointer-events:none;
+           -webkit-box-sizing:border-box;
+           border-top: 1px solid #e1e1e1;
+           margin-top: -1px;
+
+        }
+    }
+}
+.loca_list{
+    margin-bottom: 80px/$rem;
+    .loca_l_1{
+        background: #fff;
+        margin-top: 10px/$rem;
+        .sear_title{
+            position: relative;
+            padding: 13px/$rem 15px/$rem;
+            color: #999;
+            font-size: 14px/$rem;
+        }
+        .sear_title:before{
+            content: '';
+           pointer-events:none;
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           pointer-events:none;
+           -webkit-box-sizing:border-box;
+           border-bottom: 1px solid #e1e1e1;
+           margin-top: -1px;
+
+        }
+        .sear_de{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px/$rem 15px/$rem;
+            color: #333;
+            font-size: 14px/$rem;
+            div{
+                line-height: 20px/$rem;
+            }
+        }
+        .list_border{
+            position: relative;
+        }
+        .list_border:before{
+            content: '';
+           pointer-events:none;
+           position:absolute;
+           left:-50%;
+           top: -50%;
+           width:200%;
+           height: 200%;
+           transform:scale(.5);
+           pointer-events:none;
+           -webkit-box-sizing:border-box;
+           border-bottom: 1px solid #e1e1e1;
+        }
+        .sear_de_myaddress_list{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px/$rem 15px/$rem;
+            align-items: center;
+            .flex_w{
+                width: 100%;
+            }
+            .tag{
+                background: #3b9c05;
+                font-size: 10px/$rem;
+                padding: 1px/$rem 8px/$rem;
+                margin: 0 5px/$rem;
+                color: #fff;
+                border-radius: 15px/$rem;
+            }
+            .myadd_name{
+                font-size: 14px/$rem;
+                color: #333;
+                padding-bottom: 10px/$rem;
+                display: flex;
+            }
+            .myadd_de{
+                color: #999;
+                font-size: 14px/$rem;
+                font-weight: 400;
+                line-height: 20px/$rem;
+            }
+            .icon-apply_div{
+                width: 20px/$rem;
+                height: 18.8px/$rem;
+                border-radius: 100%;
+                border:1px solid #999;
+                i{
+                    font-size: 22px/$rem;
+                    display: block;
+                    color: #3b9c05;
+                    display: none;
+                }
+            }
+
+        }
+        .sear_de_list{
+            div{
+                position: relative;
+                padding: 20px/$rem 15px/$rem;
+                color: #333;
+                font-size: 14px/$rem;
+            }
+            div:before{
+                content: '';
+               pointer-events:none;
+               position:absolute;
+               left:-50%;
+               top: -50%;
+               width:200%;
+               height: 200%;
+               transform:scale(.5);
+               pointer-events:none;
+               -webkit-box-sizing:border-box;
+               border-bottom: 1px solid #e1e1e1;
+
+            }
+        }
+    }
+}
+::-webkit-input-placeholder {
+   color: #999;
+}
+.add_address{
+    height: 70px/$rem;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    .add_b{
+        margin: 10px/$rem;
+        background: #3b9c05;
+        text-align: center;
+        color: #fff;
+        border-radius: 3px/$rem;
+        font-size: 17px/$rem;
+        height: 50px/$rem;
+        line-height: 50px/$rem;
+        .icon-ice-add{
+            border:1px solid #fff;
+            border-radius: 100%;
+            margin-right:10px/$rem;
+            font-size: 19px/$rem;
+        }
+    }
+}

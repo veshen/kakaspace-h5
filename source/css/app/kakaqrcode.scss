@@ -1,0 +1,49 @@
+@import "../global/base";
+
+body {
+    background: #000;
+}
+.content {
+    width:670px/2/$rem;
+    padding: 40px/2/$rem 20px/2/$rem 80px/2/$rem;
+    margin:30px/2/$rem auto 0;
+    background: #1B1B1B;
+    border-radius: 10px/2/$rem;
+
+}
+.line-box{
+    height:120px/2/$rem;
+    display: flex;
+    border-bottom: 1px/2/$rem solid #7A7B84;
+    align-items: center;
+    justify-content: space-between;
+}
+.line-box-left{
+    border-left:4px/2/$rem solid #FFE631;
+    height: 30px/2/$rem;
+    padding-left: 20px/2/$rem;
+    font-size: 30px/2/$rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.line-box-right{
+    color: #FFF;
+}
+.line-box-right input{
+    background: #1B1B1B;
+    border-color: #1B1B1B;
+    border:none;
+    text-align: right;
+    color: #fff;
+}
+.submit-btn{
+    width: 210px/2/$rem;
+    height: 50px/2/$rem;
+    margin: 100px/2/$rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFE631;
+    border-radius: 100px/2/$rem;
+}

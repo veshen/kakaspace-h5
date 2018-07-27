@@ -1,0 +1,203 @@
+@import "../global/base";
+
+body{
+  background: #f0f0f0;
+}
+
+.store_order_complete{
+  .store_order_complete_head{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 70px/$rem;
+    padding: 0 15px/$rem;
+    position: relative;
+    &:after{
+      @extend %halfBorder;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .store_order_complete_head_l{
+      .icon-choose{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background: #3B9C05;
+        color: #fff;
+        width: 40px/$rem;
+        height: 40px/$rem;
+        font-size: 30px/$rem;
+      }
+    }
+    .store_order_complete_head_r{
+      margin-left: 10px/$rem;
+      .store_order_complete_head_r_t{
+        font-size: 14px/$rem;
+      }
+      .store_order_complete_head_r_b{
+        margin-top: 9px/$rem;
+        font-size: 12px/$rem;
+        color: #999;
+        span{
+          color: #4ba61b;
+        }
+      }
+    }
+  }
+
+  .store_order_complete_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px/$rem;
+    .store_order_complete_code{
+      width: 647px/2/$rem;
+      height: 612px/2/$rem;
+      background: url("http://resource.sa-green.cn/image/store/Group%203.png")  no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      .store_order_complete_code_t{
+        height: 180px/2/$rem;
+        .store_order_complete_code_title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 45px/2/$rem;
+          em{
+            display: inline-block;
+            height: 1px;
+            width: 15px/$rem;
+            background: #333;
+          }
+          p{
+            display: flex;
+            align-items: center;
+            em{
+              margin: 0 5px/$rem;
+            }
+          }
+          .store_order_complete_code_date{
+            margin-top: 10px/$rem;
+            color: #9a9a9a;
+            font-size: 11px/$rem;
+          }
+        }
+      }
+      .store_order_complete_code_b{
+        flex: 1 1 auto;
+        padding-bottom: 80px/$rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px/$rem;
+      }
+    }
+  }
+}
+.order_top_b{
+    background: #fff;
+    position: relative;
+    @include retinabt(#E1E1E1);
+    text-align: center;
+    padding-bottom: 30px/2/$rem;
+    overflow: hidden;
+    margin-bottom: 20px/2/$rem;
+    img{
+        display: block;
+        width: 348px/2/$rem;
+        height: 312px/2/$rem;
+        margin: 39px/2/$rem auto 27px/2/$rem;
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px/2/$rem;
+        p{
+            font-size: 28px/2/$rem;
+            color: #09a58d;
+            line-height: 28px/2/$rem;
+            margin-bottom: 12px/2/$rem;
+        }
+        span{
+            font-size: 24px/2/$rem;
+            color: #999999;
+            line-height: 24px/2/$rem;
+        }
+
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 220px/2/$rem;
+        height: 60px/2/$rem;
+        font-size: 22px/2/$rem;
+        background: #f9a0c2;
+        color: #fff;
+        border-radius: 6px/2/$rem;
+        margin: 0 auto;
+        line-height: 60px/2/$rem;
+        div{
+            margin-left: 6px/2/$rem;
+        }
+    }
+
+}
+
+.float_red{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 250px/$rem;
+    margin-right: 30px/$rem;
+    width: 48px/$rem;
+    z-index: 1;
+    img{
+        width: 100%;
+    }
+}
+.red_toast{
+    .red_bg{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        z-index: 99;
+    }
+    .content{
+        position: absolute;
+        width: 542px/2/$rem;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        z-index: 100;
+        img{
+            display: block;
+            width: 542px/2/$rem;
+            height: 562px/2/$rem;
+            margin: 0 0 20px/2/$rem 0;
+        }
+        .close_word{
+            text-align: center;
+            font-size: 24px/2/$rem;
+            color: #999;
+        }
+    }
+    .close{
+        position: absolute;
+        right: 50px/2/$rem;
+        top : 50px/2/$rem;
+        color: #ccc;
+        z-index: 100;
+        i{
+            display: inline-block;
+            border:2px solid #ccc;
+            border-radius: 100%;
+            padding: 5px/$rem;
+        }
+
+    }
+}

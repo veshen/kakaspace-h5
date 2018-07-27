@@ -1,0 +1,208 @@
+@import "../global/base";
+
+body{
+  background: #f1f1f1;
+  /*padding-bottom:50px/$rem;*/
+}
+.balanceTopMain{
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    .balanceTop_div{
+        height: 80px/$rem;
+        background: #2b2b2b;
+        .balance_price{
+            font-size: 24px/$rem;
+            padding-top: 17px/$rem;
+        }
+        .balance_price_word{
+            font-size: 12px/$rem;
+            padding-top: 7px/$rem;
+            opacity: 0.7;
+        }
+    }
+    .list_h{
+        height: 10px/$rem;
+        background: #f1f1f1;
+    }
+    .list_top{
+        background: #fff;
+        color: #999;
+        font-size: 15px/$rem;
+        width: 100%;
+        height: 44px/$rem;
+        line-height: 44px/$rem;
+        border-bottom: 1px solid #f1f1f1;
+        float: left;
+        text-align: left;
+        padding-left: 15px/$rem;
+        margin-top: -1px/$rem;
+    }
+}
+
+.balanceMoneyMain{
+    background: #fff;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    ul{
+        li{
+            height: 44px/$rem;
+            line-height: 44px/$rem;
+            padding-left: 15px/$rem;
+            padding-right: 12px/$rem;
+            display: flex;
+            justify-content: space-between;
+            span{
+                color: #333;
+                font-size: 15px/$rem;
+            }
+            i{
+                color: #333;
+            }
+            .balanceMoneyMain_l{
+                width: 150px/$rem;
+                text-align: left;
+            }
+            .balanceMoneyMain_r{
+                width: 100%;
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+.list_main{
+  margin-top: 179px/$rem;
+  .list_top{
+      height: 44px/$rem;
+      background: #fff;
+      line-height: 44px/$rem;
+      padding-left: 15px/$rem;
+      color: #999;
+      font-size: 17px/$rem;
+      border-bottom: 1px solid #f1f1f1;
+  }
+  .list_title{
+    text-align: center;
+    font-size: 15px/$rem;
+    color: #666;
+    padding: 10px;
+  }
+  .list_pad{
+    padding-left: 15px/$rem;
+    background: #fff;
+  .list_a{
+    display: inline-block;
+    width: 100%;
+    padding-top: 17px/$rem;
+    padding-bottom: 17px/$rem;
+    border-bottom: 1px solid #f1f1f1;
+    .list_l{
+      float: left;
+      .list_name{
+        color: #333;
+        font-size: 16px/$rem;
+      }
+      .list_time{
+        color: #999;
+        font-size: 12px/$rem;
+        padding-top: 5px/$rem;
+      }
+    }
+    .list_r{
+      text-align: right;
+      line-height: 35px/$rem;
+      padding-right: 12px/$rem;
+      color: #323232;
+      font-size: 15px/$rem;
+    }
+  }
+  }
+  .no_list{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding-top: 50px/$rem;
+    img{
+      width: 111px/$rem;
+      margin-bottom: 10px/$rem;
+    }
+  }
+  .no_more{
+      height: 44px/$rem;
+      color: #999;
+      font-size:12px/$rem;
+      line-height: 44px/$rem;
+      text-align: center;
+  }
+}
+//弹窗
+.plan_rule{
+  width: 530px/2/$rem;
+  background: #fff;
+  border-radius: 3px;
+  .plan_rule_head{
+    height: 100px/2/$rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b9c05;
+    color: #fff;
+    font-size: 18px/$rem;
+  }
+  .plan_rule_body{
+    padding: 15px/$rem 10px/$rem;
+  }
+  .plan_rule_item{
+    display: flex;
+    font-size: 13px/$rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px/$rem;
+  }
+  .plan_rule_foot{
+    margin: 15px/$rem 10px/$rem;
+    display: flex;
+    font-size: 13px/$rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px/$rem;
+  }
+}
+.icon-down{
+    color: #999 !important;
+    display: inline-block;
+    transform:rotateZ(-90deg);
+}
+.icon-t{
+    height: 13px/$rem !important;
+    font-size: 15px/$rem;
+}
+.icon_css{
+    height: 13px/$rem !important;
+}
+.nullList{
+    min-height: 500px/$rem;
+    text-align: center;
+    padding-top: 50px/$rem;
+    img{
+        width: 105px/$rem;
+        height: 105px/$rem;
+    }
+    p{
+        color: #999;
+        font-size: 15px/$rem;
+        margin-top: 10px/$rem;
+    }
+}
+.icon-question{
+    font-size: 14px/$rem;
+    position: absolute;
+    margin-top: 15px/$rem;
+    margin-left: 3px/$rem;
+}
